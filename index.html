@@ -378,24 +378,7 @@
     <div id="modal1" class="modal" onclick="closeModal(event, 'modal1')">
         <div class="modal-content" onclick="event.stopPropagation()">
             <button class="modal-close" onclick="closeModal(event, 'modal1')">&times;</button>
-            <div class="carousel-container">
-                <div class="carousel-slide active">
-                    <img src="take_the_leap_icons_final.png" alt="Take the Leap 1" class="modal-image">
-                </div>
-                <div class="carousel-slide">
-                    <img src="take_the_leap_icons_final.png" alt="Take the Leap 2" class="modal-image">
-                </div>
-                <div class="carousel-slide">
-                    <img src="take_the_leap_icons_final.png" alt="Take the Leap 3" class="modal-image">
-                </div>
-                <button class="carousel-btn prev" onclick="changeSlide(event, 'modal1', -1)">‹</button>
-                <button class="carousel-btn next" onclick="changeSlide(event, 'modal1', 1)">›</button>
-                <div class="carousel-indicators">
-                    <span class="indicator active" onclick="goToSlide(event, 'modal1', 0)"></span>
-                    <span class="indicator" onclick="goToSlide(event, 'modal1', 1)"></span>
-                    <span class="indicator" onclick="goToSlide(event, 'modal1', 2)"></span>
-                </div>
-            </div>
+            <img src="take_the_leap_icons_final.png" alt="Take the Leap 1" class="modal-image">
             <div class="modal-body">
                 <h2>Take the Leap</h2>
                 <div class="tags">
