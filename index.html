@@ -178,82 +178,10 @@
             background: #e0e0e0;
         }
 
-        .carousel-container {
-            position: relative;
-            width: 100%;
-            height: 400px;
-            overflow: hidden;
-            background: #000;
-        }
-
-        .carousel-slide {
-            display: none;
-            width: 100%;
-            height: 100%;
-        }
-
-        .carousel-slide.active {
-            display: block;
-        }
-
         .modal-image {
             width: 100%;
             height: 400px;
-            object-fit: contain;
-            background: #000;
-        }
-
-        .carousel-btn {
-            position: absolute;
-            top: 50%;
-            transform: translateY(-50%);
-            background: rgba(255, 255, 255, 0.9);
-            border: none;
-            width: 50px;
-            height: 50px;
-            border-radius: 50%;
-            font-size: 1.5rem;
-            cursor: pointer;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            transition: background 0.3s ease;
-            z-index: 2;
-        }
-
-        .carousel-btn:hover {
-            background: rgba(255, 255, 255, 1);
-        }
-
-        .carousel-btn.prev {
-            left: 1rem;
-        }
-
-        .carousel-btn.next {
-            right: 1rem;
-        }
-
-        .carousel-indicators {
-            position: absolute;
-            bottom: 1rem;
-            left: 50%;
-            transform: translateX(-50%);
-            display: flex;
-            gap: 0.5rem;
-            z-index: 2;
-        }
-
-        .indicator {
-            width: 10px;
-            height: 10px;
-            border-radius: 50%;
-            background: rgba(255, 255, 255, 0.5);
-            cursor: pointer;
-            transition: background 0.3s ease;
-        }
-
-        .indicator.active {
-            background: rgba(255, 255, 255, 1);
+            object-fit: cover;
         }
 
         .modal-body {
@@ -321,7 +249,7 @@
         
         <div class="projects-grid">
             <div class="project-card clickable" onclick="openModal('modal1')">
-                <img src="take_the_leap_icons_final.png" alt="Take the Leap Icons" class="project-image">
+                <img src="take_the_leap_icons_final.png" viewBox='0 0 400 250'%3E%3Crect fill='%23667eea' width='400' height='250'/%3E%3Ctext x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' fill='white' font-family='Arial' font-size='24' font-weight='bold'%3ETake the Leap%3C/text%3E%3C/svg%3E" alt="Take the Leap Icons" class="project-image">
                 <div class="project-content">
                     <h3>Take the Leap</h3>
                     <p>Icon design system for a motivational brand, focusing on clarity and emotional resonance to inspire users to take action.</p>
@@ -334,7 +262,7 @@
             </div>
 
             <div class="project-card clickable" onclick="openModal('modal2')">
-                <img src="infographic_final.png" alt="Wellesley College Data" class="project-image">
+                <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 250'%3E%3Crect fill='%23f093fb' width='400' height='250'/%3E%3Ccircle cx='100' cy='80' r='30' fill='white' opacity='0.3'/%3E%3Ccircle cx='200' cy='140' r='40' fill='white' opacity='0.3'/%3E%3Ccircle cx='300' cy='100' r='35' fill='white' opacity='0.3'/%3E%3Ctext x='50%25' y='90%25' dominant-baseline='middle' text-anchor='middle' fill='white' font-family='Arial' font-size='20' font-weight='bold'%3EWellesley College Infographic%3C/text%3E%3C/svg%3E" alt="Wellesley College Data" class="project-image">
                 <div class="project-content">
                     <h3>College Life Infographic</h3>
                     <p>Personal data visualization tracking 100 weeks at Wellesley College, featuring location analytics, food photography, and family relationships over time.</p>
@@ -347,7 +275,7 @@
             </div>
 
             <div class="project-card clickable" onclick="openModal('modal3')">
-                <img src="fish_logo_final.png" alt="Country Joe's Pets Logo" class="project-image">
+                <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 250'%3E%3Crect fill='%2364b5f6' width='400' height='250'/%3E%3Ccircle cx='200' cy='125' r='60' fill='%23003d5c' opacity='0.6'/%3E%3Ctext x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' fill='white' font-family='Arial' font-size='24' font-weight='bold'%3ECountry Joe's Pets%3C/text%3E%3C/svg%3E" alt="Country Joe's Pets Logo" class="project-image">
                 <div class="project-content">
                     <h3>Country Joe's Pets Brand Identity</h3>
                     <p>Reimagined branding for a fictional pet store emphasizing humane, stress-free care with a chocolate bar-inspired design aesthetic.</p>
@@ -360,7 +288,7 @@
             </div>
 
             <div class="project-card clickable" onclick="openModal('modal4')">
-                <img src="Cyanotype_result_final.png" alt="Cyanotype Process" class="project-image">
+                <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 250'%3E%3Cdefs%3E%3ClinearGradient id='cyan' x1='0' y1='0' x2='0' y2='1'%3E%3Cstop offset='0%25' stop-color='%230a4d68'/%3E%3Cstop offset='100%25' stop-color='%23088395'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect fill='url(%23cyan)' width='400' height='250'/%3E%3Cellipse cx='200' cy='180' rx='80' ry='40' fill='white' opacity='0.2'/%3E%3Cpath d='M 150 150 Q 200 130 250 150' stroke='white' stroke-width='2' fill='none' opacity='0.4'/%3E%3Ctext x='50%25' y='15%25' dominant-baseline='middle' text-anchor='middle' fill='white' font-family='Arial' font-size='20' font-weight='bold'%3ECyanotype Postcard%3C/text%3E%3C/svg%3E" alt="Cyanotype Process" class="project-image">
                 <div class="project-content">
                     <h3>Cyanotype Postcard Project</h3>
                     <p>Process documentation for creating botanical art using traditional cyanotype printing techniques with natural materials and sunlight.</p>
@@ -378,24 +306,7 @@
     <div id="modal1" class="modal" onclick="closeModal(event, 'modal1')">
         <div class="modal-content" onclick="event.stopPropagation()">
             <button class="modal-close" onclick="closeModal(event, 'modal1')">&times;</button>
-            <div class="carousel-container">
-                <div class="carousel-slide active">
-                    <img src="take_the_leap_icons_final.png" alt="Take the Leap 1" class="modal-image">
-                </div>
-                <div class="carousel-slide">
-                    <img src="take_the_leap_icons_final.png" alt="Take the Leap 2" class="modal-image">
-                </div>
-                <div class="carousel-slide">
-                    <img src="take_the_leap_icons_final.png" alt="Take the Leap 3" class="modal-image">
-                </div>
-                <button class="carousel-btn prev" onclick="changeSlide(event, 'modal1', -1)">‹</button>
-                <button class="carousel-btn next" onclick="changeSlide(event, 'modal1', 1)">›</button>
-                <div class="carousel-indicators">
-                    <span class="indicator active" onclick="goToSlide(event, 'modal1', 0)"></span>
-                    <span class="indicator" onclick="goToSlide(event, 'modal1', 1)"></span>
-                    <span class="indicator" onclick="goToSlide(event, 'modal1', 2)"></span>
-                </div>
-            </div>
+            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 400'%3E%3Crect fill='%23667eea' width='800' height='400'/%3E%3Ctext x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' fill='white' font-family='Arial' font-size='36' font-weight='bold'%3ETake the Leap Icons%3C/text%3E%3C/svg%3E" alt="Take the Leap" class="modal-image">
             <div class="modal-body">
                 <h2>Take the Leap</h2>
                 <div class="tags">
@@ -430,24 +341,7 @@
     <div id="modal2" class="modal" onclick="closeModal(event, 'modal2')">
         <div class="modal-content" onclick="event.stopPropagation()">
             <button class="modal-close" onclick="closeModal(event, 'modal2')">&times;</button>
-            <div class="carousel-container">
-                <div class="carousel-slide active">
-                    <img src="infographic_final.png" alt="Infographic 1" class="modal-image">
-                </div>
-                <div class="carousel-slide">
-                    <img src="infographic_final.png" alt="Infographic 2" class="modal-image">
-                </div>
-                <div class="carousel-slide">
-                    <img src="infographic_final.png" alt="Infographic 3" class="modal-image">
-                </div>
-                <button class="carousel-btn prev" onclick="changeSlide(event, 'modal2', -1)">‹</button>
-                <button class="carousel-btn next" onclick="changeSlide(event, 'modal2', 1)">›</button>
-                <div class="carousel-indicators">
-                    <span class="indicator active" onclick="goToSlide(event, 'modal2', 0)"></span>
-                    <span class="indicator" onclick="goToSlide(event, 'modal2', 1)"></span>
-                    <span class="indicator" onclick="goToSlide(event, 'modal2', 2)"></span>
-                </div>
-            </div>
+            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 400'%3E%3Crect fill='%23f093fb' width='800' height='400'/%3E%3Ccircle cx='200' cy='160' r='60' fill='white' opacity='0.3'/%3E%3Ccircle cx='400' cy='280' r='80' fill='white' opacity='0.3'/%3E%3Ccircle cx='600' cy='200' r='70' fill='white' opacity='0.3'/%3E%3Ctext x='50%25' y='90%25' dominant-baseline='middle' text-anchor='middle' fill='white' font-family='Arial' font-size='32' font-weight='bold'%3EWellesley College Data Visualization%3C/text%3E%3C/svg%3E" alt="Wellesley Infographic" class="modal-image">
             <div class="modal-body">
                 <h2>College Life Infographic</h2>
                 <div class="tags">
@@ -484,24 +378,7 @@
     <div id="modal3" class="modal" onclick="closeModal(event, 'modal3')">
         <div class="modal-content" onclick="event.stopPropagation()">
             <button class="modal-close" onclick="closeModal(event, 'modal3')">&times;</button>
-            <div class="carousel-container">
-                <div class="carousel-slide active">
-                    <img src="fish_logo_final.png" alt="Country Joe's 1" class="modal-image">
-                </div>
-                <div class="carousel-slide">
-                    <img src="fish_logo_final.png" alt="Country Joe's 2" class="modal-image">
-                </div>
-                <div class="carousel-slide">
-                    <img src="fish_logo_final.png" alt="Country Joe's 3" class="modal-image">
-                </div>
-                <button class="carousel-btn prev" onclick="changeSlide(event, 'modal3', -1)">‹</button>
-                <button class="carousel-btn next" onclick="changeSlide(event, 'modal3', 1)">›</button>
-                <div class="carousel-indicators">
-                    <span class="indicator active" onclick="goToSlide(event, 'modal3', 0)"></span>
-                    <span class="indicator" onclick="goToSlide(event, 'modal3', 1)"></span>
-                    <span class="indicator" onclick="goToSlide(event, 'modal3', 2)"></span>
-                </div>
-            </div>
+            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 400'%3E%3Crect fill='%2364b5f6' width='800' height='400'/%3E%3Ccircle cx='400' cy='200' r='120' fill='%23003d5c' opacity='0.6'/%3E%3Ctext x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' fill='white' font-family='Arial' font-size='48' font-weight='bold'%3ECountry Joe's Pets%3C/text%3E%3C/svg%3E" alt="Country Joe's Pets" class="modal-image">
             <div class="modal-body">
                 <h2>Country Joe's Pets Brand Identity</h2>
                 <div class="tags">
@@ -537,24 +414,7 @@
     <div id="modal4" class="modal" onclick="closeModal(event, 'modal4')">
         <div class="modal-content" onclick="event.stopPropagation()">
             <button class="modal-close" onclick="closeModal(event, 'modal4')">&times;</button>
-            <div class="carousel-container">
-                <div class="carousel-slide active">
-                    <img src="Cyanotype_result_final.png" alt="Cyanotype 1" class="modal-image">
-                </div>
-                <div class="carousel-slide">
-                    <img src="Cyanotype_result_final.png" alt="Cyanotype 2" class="modal-image">
-                </div>
-                <div class="carousel-slide">
-                    <img src="Cyanotype_result_final.png" alt="Cyanotype 3" class="modal-image">
-                </div>
-                <button class="carousel-btn prev" onclick="changeSlide(event, 'modal4', -1)">‹</button>
-                <button class="carousel-btn next" onclick="changeSlide(event, 'modal4', 1)">›</button>
-                <div class="carousel-indicators">
-                    <span class="indicator active" onclick="goToSlide(event, 'modal4', 0)"></span>
-                    <span class="indicator" onclick="goToSlide(event, 'modal4', 1)"></span>
-                    <span class="indicator" onclick="goToSlide(event, 'modal4', 2)"></span>
-                </div>
-            </div>
+            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 400'%3E%3Cdefs%3E%3ClinearGradient id='cyan2' x1='0' y1='0' x2='0' y2='1'%3E%3Cstop offset='0%25' stop-color='%230a4d68'/%3E%3Cstop offset='100%25' stop-color='%23088395'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect fill='url(%23cyan2)' width='800' height='400'/%3E%3Cellipse cx='400' cy='320' rx='160' ry='80' fill='white' opacity='0.2'/%3E%3Cpath d='M 300 280 Q 400 240 500 280' stroke='white' stroke-width='3' fill='none' opacity='0.4'/%3E%3Ctext x='50%25' y='15%25' dominant-baseline='middle' text-anchor='middle' fill='white' font-family='Arial' font-size='32' font-weight='bold'%3ECyanotype Postcard Process%3C/text%3E%3C/svg%3E" alt="Cyanotype Process" class="modal-image">
             <div class="modal-body">
                 <h2>Cyanotype Postcard Project</h2>
                 <div class="tags">
@@ -589,54 +449,15 @@
     </div>
 
     <script>
-        const modalStates = {
-            modal1: 0,
-            modal2: 0,
-            modal3: 0,
-            modal4: 0
-        };
-
         function openModal(modalId) {
             document.getElementById(modalId).classList.add('active');
             document.body.style.overflow = 'hidden';
-            modalStates[modalId] = 0;
-            showSlide(modalId, 0);
         }
 
         function closeModal(event, modalId) {
             event.stopPropagation();
             document.getElementById(modalId).classList.remove('active');
             document.body.style.overflow = 'auto';
-        }
-
-        function changeSlide(event, modalId, direction) {
-            event.stopPropagation();
-            const modal = document.getElementById(modalId);
-            const slides = modal.querySelectorAll('.carousel-slide');
-            const totalSlides = slides.length;
-            
-            modalStates[modalId] = (modalStates[modalId] + direction + totalSlides) % totalSlides;
-            showSlide(modalId, modalStates[modalId]);
-        }
-
-        function goToSlide(event, modalId, index) {
-            event.stopPropagation();
-            modalStates[modalId] = index;
-            showSlide(modalId, index);
-        }
-
-        function showSlide(modalId, index) {
-            const modal = document.getElementById(modalId);
-            const slides = modal.querySelectorAll('.carousel-slide');
-            const indicators = modal.querySelectorAll('.indicator');
-            
-            slides.forEach((slide, i) => {
-                slide.classList.toggle('active', i === index);
-            });
-            
-            indicators.forEach((indicator, i) => {
-                indicator.classList.toggle('active', i === index);
-            });
         }
     </script>
 
