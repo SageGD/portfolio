@@ -465,7 +465,12 @@
     <div id="modal1" class="modal" onclick="closeModal(event, 'modal1')">
         <div class="modal-content" onclick="event.stopPropagation()">
             <button class="modal-close" onclick="closeModal(event, 'modal1')">&times;</button>
-            <img src="take_the_leap_icons_final.png" alt="Take the Leap" class="modal-image">
+            <div class="image-container">
+                <img src="take_the_leap_icons_final.png" alt="Take the Leap" class="modal-image" onclick="openFullscreen('take_the_leap_icons_final.png')">
+                <button class="fullscreen-btn" onclick="openFullscreen('take_the_leap_icons_final.png')">
+                    <span>⛶</span> View Full Size
+                </button>
+            </div>
             <div class="modal-body">
                 <h2>Culture Pictograms</h2>
                 <div class="tags">
@@ -544,16 +549,19 @@
             <button class="modal-close" onclick="closeModal(event, 'modal3')">&times;</button>
             <div class="carousel-container">
                 <div class="carousel-slide active">
-                    <img src="fish_logo_final.png" alt="Country Joe's 1">
+                    <img src="fish_logo_final.png" alt="Country Joe's 1" onclick="openFullscreen('fish_logo_final.png')">
                 </div>
                 <div class="carousel-slide">
-                    <img src="fish_logo_final.png" alt="Country Joe's 2">
+                    <img src="fish_logo_final.png" alt="Country Joe's 2" onclick="openFullscreen('fish_logo_final.png')">
                 </div>
                 <div class="carousel-slide">
-                    <img src="fish_logo_final.png" alt="Country Joe's 3">
+                    <img src="fish_logo_final.png" alt="Country Joe's 3" onclick="openFullscreen('fish_logo_final.png')">
                 </div>
                 <button class="carousel-btn prev" onclick="changeSlide(event, 'modal3', -1)">‹</button>
                 <button class="carousel-btn next" onclick="changeSlide(event, 'modal3', 1)">›</button>
+                <button class="fullscreen-btn" onclick="getCurrentCarouselImage(event, 'modal3')">
+                    <span>⛶</span> View Full Size
+                </button>
                 <div class="carousel-indicators">
                     <span class="indicator active" onclick="goToSlide(event, 'modal3', 0)"></span>
                     <span class="indicator" onclick="goToSlide(event, 'modal3', 1)"></span>
@@ -597,16 +605,19 @@
             <button class="modal-close" onclick="closeModal(event, 'modal4')">&times;</button>
             <div class="carousel-container">
                 <div class="carousel-slide active">
-                    <img src="Cyanotype_ingredients_final.png" alt="Cyanotype 1">
+                    <img src="Cyanotype_ingredients_final.png" alt="Cyanotype 1" onclick="openFullscreen('Cyanotype_ingredients_final.png')">
                 </div>
                 <div class="carousel-slide">
-                    <img src="Cyanotype_result_final.png" alt="Cyanotype 2">
+                    <img src="Cyanotype_result_final.png" alt="Cyanotype 2" onclick="openFullscreen('Cyanotype_result_final.png')">
                 </div>
                 <div class="carousel-slide">
-                    <img src="Cyanotype_result_final.png" alt="Cyanotype 3">
+                    <img src="Cyanotype_result_final.png" alt="Cyanotype 3" onclick="openFullscreen('Cyanotype_result_final.png')">
                 </div>
                 <button class="carousel-btn prev" onclick="changeSlide(event, 'modal4', -1)">‹</button>
                 <button class="carousel-btn next" onclick="changeSlide(event, 'modal4', 1)">›</button>
+                <button class="fullscreen-btn" onclick="getCurrentCarouselImage(event, 'modal4')">
+                    <span>⛶</span> View Full Size
+                </button>
                 <div class="carousel-indicators">
                     <span class="indicator active" onclick="goToSlide(event, 'modal4', 0)"></span>
                     <span class="indicator" onclick="goToSlide(event, 'modal4', 1)"></span>
@@ -716,6 +727,15 @@
             const overlay = document.getElementById('fullscreenOverlay');
             overlay.classList.remove('active');
             document.body.style.overflow = 'auto';
+        }
+
+        function getCurrentCarouselImage(event, modalId) {
+            event.stopPropagation();
+            const modal = document.getElementById(modalId);
+            const activeSlide = modal.querySelector('.carousel-slide.active img');
+            if (activeSlide) {
+                openFullscreen(activeSlide.src);
+            }
         }
     </script>
 
