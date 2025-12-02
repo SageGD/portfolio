@@ -591,7 +591,12 @@
     <div id="modal3" class="modal" onclick="closeModal(event, 'modal3')">
         <div class="modal-content" onclick="event.stopPropagation()">
             <button class="modal-close" onclick="closeModal(event, 'modal3')">&times;</button>
-            <img src="fish_logo_final.png" alt="Country Joe's" onclick="openFullscreen('fish_logo_final.png')">
+            <div class="image-container">
+                <img src="fish_logo_final.png" alt="Country Joe's" onclick="openFullscreen('fish_logo_final.png')">
+                <button class="fullscreen-btn" onclick="openFullscreen('infographic_final.png')">
+                    <span>⛶</span> View Full Size
+                </button>
+            </div>
             <div class="modal-body">
                 <h2>Country Joe's Pets Brand Identity</h2>
                 <div class="tags">
