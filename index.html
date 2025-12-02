@@ -591,27 +591,7 @@
     <div id="modal3" class="modal" onclick="closeModal(event, 'modal3')">
         <div class="modal-content" onclick="event.stopPropagation()">
             <button class="modal-close" onclick="closeModal(event, 'modal3')">&times;</button>
-            <div class="carousel-container">
-                <div class="carousel-slide active">
-                    <img src="fish_logo_final.png" alt="Country Joe's 1" onclick="openFullscreen('fish_logo_final.png')">
-                </div>
-                <div class="carousel-slide">
-                    <img src="fish_logo_final.png" alt="Country Joe's 2" onclick="openFullscreen('fish_logo_final.png')">
-                </div>
-                <div class="carousel-slide">
-                    <img src="fish_logo_final.png" alt="Country Joe's 3" onclick="openFullscreen('fish_logo_final.png')">
-                </div>
-                <button class="carousel-btn prev" onclick="changeSlide(event, 'modal3', -1)">‹</button>
-                <button class="carousel-btn next" onclick="changeSlide(event, 'modal3', 1)">›</button>
-                <button class="fullscreen-btn" onclick="getCurrentCarouselImage(event, 'modal3')">
-                    <span>⛶</span> View Full Size
-                </button>
-                <div class="carousel-indicators">
-                    <span class="indicator active" onclick="goToSlide(event, 'modal3', 0)"></span>
-                    <span class="indicator" onclick="goToSlide(event, 'modal3', 1)"></span>
-                    <span class="indicator" onclick="goToSlide(event, 'modal3', 2)"></span>
-                </div>
-            </div>
+            <img src="fish_logo_final.png" alt="Country Joe's" onclick="openFullscreen('fish_logo_final.png')">
             <div class="modal-body">
                 <h2>Country Joe's Pets Brand Identity</h2>
                 <div class="tags">
