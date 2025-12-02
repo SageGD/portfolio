@@ -502,6 +502,20 @@
                     </div>
                 </div>
             </div>
+            
+            <div class="project-card clickable" onclick="openModal('modal5')">
+                <img src="boat_water_sunset.jpg" alt="Autonomous Boat" class="project-image">
+                <div class="project-content">
+                    <h3>Autonomous Surface Vehicle</h3>
+                    <p>GPS-navigated robotic boat designed to autonomously navigate between waypoints using custom navigation algorithms and real-time heading correction.</p>
+                    <div class="tags">
+                        <span class="tag">Robotics</span>
+                        <span class="tag">Arduino</span>
+                        <span class="tag">GPS Navigation</span>
+                        <span class="tag">Systems Integration</span>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
@@ -682,6 +696,92 @@
         </div>
     </div>
 
+    <div id="modal5" class="modal" onclick="closeModal(event, 'modal5')">
+        <div class="modal-content" onclick="event.stopPropagation()">
+            <button class="modal-close" onclick="closeModal(event, 'modal5')">&times;</button>
+            <div class="carousel-container">
+                <div class="carousel-slide active">
+                    <img src="boat_prototype_closeup.jpg" alt="Boat Prototype 1" onclick="openFullscreen('boat_prototype_closeup.jpg')">
+                </div>
+                <div class="carousel-slide">
+                    <img src="boat_water_sunset.jpg" alt="Boat Testing 2" onclick="openFullscreen('boat_water_sunset.jpg')">
+                </div>
+                <div class="carousel-slide">
+                    <img src="boat_cad_render.jpg" alt="CAD Design 3" onclick="openFullscreen('boat_cad_render.jpg')">
+                </div>
+                <div class="carousel-slide">
+                    <img src="boat_lake_testing.jpg" alt="Lake Testing 4" onclick="openFullscreen('boat_lake_testing.jpg')">
+                </div>
+                <div class="carousel-slide">
+                    <img src="boat_cad_angle.jpg" alt="CAD Angle 5" onclick="openFullscreen('boat_cad_angle.jpg')">
+                </div>
+                <div class="carousel-slide">
+                    <img src="boat_water_sunset_2.jpg" alt="Sunset Testing 6" onclick="openFullscreen('boat_water_sunset_2.jpg')">
+                </div>
+                <div class="carousel-slide">
+                    <img src="boat_cad_side.jpg" alt="CAD Side View 7" onclick="openFullscreen('boat_cad_side.jpg')">
+                </div>
+                <div class="carousel-slide">
+                    <img src="boat_evening_test.jpg" alt="Evening Testing 8" onclick="openFullscreen('boat_evening_test.jpg')">
+                </div>
+                <button class="carousel-btn prev" onclick="changeSlide(event, 'modal5', -1)">‹</button>
+                <button class="carousel-btn next" onclick="changeSlide(event, 'modal5', 1)">›</button>
+                <button class="fullscreen-btn" onclick="getCurrentCarouselImage(event, 'modal5')">
+                    <span>⛶</span> View Full Size
+                </button>
+                <div class="carousel-indicators">
+                    <span class="indicator active" onclick="goToSlide(event, 'modal5', 0)"></span>
+                    <span class="indicator" onclick="goToSlide(event, 'modal5', 1)"></span>
+                    <span class="indicator" onclick="goToSlide(event, 'modal5', 2)"></span>
+                    <span class="indicator" onclick="goToSlide(event, 'modal5', 3)"></span>
+                    <span class="indicator" onclick="goToSlide(event, 'modal5', 4)"></span>
+                    <span class="indicator" onclick="goToSlide(event, 'modal5', 5)"></span>
+                    <span class="indicator" onclick="goToSlide(event, 'modal5', 6)"></span>
+                    <span class="indicator" onclick="goToSlide(event, 'modal5', 7)"></span>
+                </div>
+            </div>
+            <div class="modal-body">
+                <h2>Autonomous Surface Vehicle</h2>
+                <div class="tags">
+                    <span class="tag">Robotics</span>
+                    <span class="tag">Arduino</span>
+                    <span class="tag">GPS Navigation</span>
+                    <span class="tag">Systems Integration</span>
+                </div>
+                <p class="modal-description">
+                    Designed and programmed an autonomous robotic boat capable of navigating between GPS waypoints without a compass. Developed custom navigation algorithms using position-based heading calculations and implemented real-time course correction to handle wind drift and environmental challenges.
+                </p>
+                <div class="modal-section">
+                    <h3>Technical Challenges Solved</h3>
+                    <ul>
+                        <li>Compass-free navigation: Calculated heading using previous and current GPS coordinates to determine boat direction</li>
+                        <li>Wind drift compensation: Implemented heading verification system that corrects course when boat deviates beyond ±45° from target</li>
+                        <li>GPS reliability issues: Solved connection problems through soldering and fixed overflow errors by restructuring code initialization</li>
+                        <li>Waypoint navigation: Programmed multi-waypoint system with automatic return-to-start functionality</li>
+                    </ul>
+                </div>
+                <div class="modal-section">
+                    <h3>Navigation Algorithm Evolution</h3>
+                    <ul>
+                        <li>V1: Simple position-relative movement (inefficient routing)</li>
+                        <li>V2: Distance-based switching with single-axis logic (couldn't detect reverse heading)</li>
+                        <li>V3 (Final): Dual-axis heading calculation comparing current vs. target heading with ±45° tolerance and 10m waypoint threshold</li>
+                    </ul>
+                </div>
+                <div class="modal-section">
+                    <h3>System Components</h3>
+                    <ul>
+                        <li>Arduino microcontroller with custom navigation code</li>
+                        <li>GPS module (TinyGPS++ library) with soldered connections for reliability</li>
+                        <li>Dual ESC motor control via PWM (Digital Pins 9/10)</li>
+                        <li>Custom fiberglass composite hull design</li>
+                        <li>4-second navigation cycle with real-time distance calculations</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- Fullscreen Overlay -->
     <div id="fullscreenOverlay" class="fullscreen-overlay">
         <button class="fullscreen-close" onclick="closeFullscreen()">&times;</button>
@@ -697,7 +797,8 @@
             modal1: 0,
             modal2: 0,
             modal3: 0,
-            modal4: 0
+            modal4: 0,
+            modal5: 0
         };
 
         let fullscreenState = {
