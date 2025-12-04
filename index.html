@@ -518,6 +518,20 @@
                     </div>
                 </div>
             </div>
+
+            <div class="project-card clickable" onclick="openModal('modal6')">
+                <img src="copper_poster_presentation.jpg" alt="Copper Recycling Research" class="project-image">
+                <div class="project-content">
+                    <h3>AI-Powered Copper Scrap Sorting</h3>
+                    <p>Machine learning system using sensor fusion to automate copper scrap classification, combining spectroscopy, 3D imaging, and thermal analysis for high-accuracy metal sorting.</p>
+                    <div class="tags">
+                        <span class="tag">Machine Learning</span>
+                        <span class="tag">Computer Vision</span>
+                        <span class="tag">Sensor Fusion</span>
+                        <span class="tag">Materials Science</span>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
@@ -773,6 +787,80 @@
         </div>
     </div>
 
+    <div id="modal6" class="modal" onclick="closeModal(event, 'modal6')">
+        <div class="modal-content" onclick="event.stopPropagation()">
+            <button class="modal-close" onclick="closeModal(event, 'modal6')">&times;</button>
+            <div class="carousel-container">
+                <div class="carousel-slide active">
+                    <img src="copper_conveyor_setup.jpg" alt="Conveyor System" onclick="openFullscreen('copper_conveyor_setup.jpg')">
+                </div>
+                <div class="carousel-slide">
+                    <img src="copper_metal_samples.jpg" alt="Metal Samples" onclick="openFullscreen('copper_metal_samples.jpg')">
+                </div>
+                <div class="carousel-slide">
+                    <img src="copper_poster_presentation.jpg" alt="Poster Presentation" onclick="openFullscreen('copper_poster_presentation.jpg')">
+                </div>
+                <div class="carousel-slide">
+                    <img src="copper_research_poster.jpg" alt="Poster" onclick="openFullscreen('copper_research_poster.jpg')">
+                </div>
+                <div class="carousel-slide">
+                    <img src="scrap_yard.jpg" alt="Metal Scrap Yard" onclick="openFullscreen('scrap_yard.jpg')">
+                </div>
+                <button class="carousel-btn prev" onclick="changeSlide(event, 'modal6', -1)">‹</button>
+                <button class="carousel-btn next" onclick="changeSlide(event, 'modal6', 1)">›</button>
+                <button class="fullscreen-btn" onclick="getCurrentCarouselImage(event, 'modal6')">
+                    <span>⛶</span> View Full Size
+                </button>
+                <div class="carousel-indicators">
+                    <span class="indicator active" onclick="goToSlide(event, 'modal6', 0)"></span>
+                    <span class="indicator" onclick="goToSlide(event, 'modal6', 1)"></span>
+                    <span class="indicator" onclick="goToSlide(event, 'modal6', 2)"></span>
+                    <span class="indicator" onclick="goToSlide(event, 'modal6', 3)"></span>
+                    <span class="indicator" onclick="goToSlide(event, 'modal6', 4)"></span>
+                </div>
+            </div>
+            <div class="modal-body">
+                <h2>Cutting Costs for Copper Recycling with Sensor Fusion</h2>
+                <div class="tags">
+                    <span class="tag">Machine Learning</span>
+                    <span class="tag">Computer Vision</span>
+                    <span class="tag">Sensor Fusion</span>
+                    <span class="tag">Materials Science</span>
+                </div>
+                <p class="modal-description">
+                    Developed an AI-powered automated sorting system for copper scrap recycling at MIT's Scrap Intelligence Lab. Combined spectroscopy sensors, 3D cameras, thermal imaging, and machine learning to classify high-grade versus low-grade copper with 88.75% accuracy, addressing critical inefficiencies in the metal recycling industry.
+                </p>
+                <div class="modal-section">
+                    <h3>Technical Approach</h3>
+                    <ul>
+                        <li>Multi-sensor fusion system: Spectroscopy (hidden camera), 3D depth camera, Basler camera (4 angles), USB cameras, and detector camera</li>
+                        <li>Automated conveyor belt system triggering sensors as copper scrap passes detection points</li>
+                        <li>Machine learning model trained on spectral data, weight, 3D geometry, and visual features</li>
+                        <li>Achieved 88.75% classification accuracy on three-fold cross validation for high-grade copper</li>
+                    </ul>
+                </div>
+                <div class="modal-section">
+                    <h3>Research Findings</h3>
+                    <ul>
+                        <li>Spectral data qualitatively differentiates between painted and unpainted copper scrap</li>
+                        <li>Optical data (Basler images) most effective for classification; adding weight/3D data decreased accuracy</li>
+                        <li>Paint and surface coatings significantly reduce classification accuracy - future work needed on multispectral/thermal imaging</li>
+                        <li>System addresses manual sorting limitations in copper recycling critical for green technology supply chains</li>
+                    </ul>
+                </div>
+                <div class="modal-section">
+                    <h3>Impact & Recognition</h3>
+                    <ul>
+                        <li>Research conducted at MIT Scrap Intelligence Lab, Department of Materials Science and Engineering</li>
+                        <li>Supported by MIT Energy Initiative and collaborating team members</li>
+                        <li>Presented research findings at MIT poster session</li>
+                        <li>Contributes to sustainable copper recycling infrastructure needed for green technology transition</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- Fullscreen Overlay -->
     <div id="fullscreenOverlay" class="fullscreen-overlay">
         <button class="fullscreen-close" onclick="closeFullscreen()">&times;</button>
@@ -789,7 +877,8 @@
             modal2: 0,
             modal3: 0,
             modal4: 0,
-            modal5: 0
+            modal5: 0,
+            modal6: 0
         };
 
         let fullscreenState = {
