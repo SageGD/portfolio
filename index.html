@@ -454,7 +454,7 @@
         
         <div class="projects-grid">
             <div class="project-card clickable" onclick="openModal('modal1')">
-                <img src="take_the_leap_icons_final.png" alt="Take the Leap Icons" class="project-image">
+                <img src="take_the_leap_icons_final.png" alt="Take the Leap Icons" class="project-image" onclick="openFullscreen(event, 'take_the_leap_icons_final.png')">
                 <div class="project-content">
                     <h3>Culture Pictograms</h3>
                     <p>Icon design system for a motivational brand, focusing on clarity and emotional resonance to inspire users to take action.</p>
@@ -467,7 +467,7 @@
             </div>
 
             <div class="project-card clickable" onclick="openModal('modal2')">
-                <img src="infographic_final.png" alt="Wellesley College Data" class="project-image">
+                <img src="infographic_final.png" alt="Wellesley College Data" class="project-image" onclick="openFullscreen(event, 'infographic_final.png')">
                 <div class="project-content">
                     <h3>College Life Infographic</h3>
                     <p>Personal data visualization tracking 100 weeks at Wellesley College, featuring location analytics, food photography, and family relationships over time.</p>
@@ -480,7 +480,7 @@
             </div>
 
             <div class="project-card clickable" onclick="openModal('modal3')">
-                <img src="fish_logo_final.jpg" alt="Country Joe's Pets Logo" class="project-image">
+                <img src="fish_logo_final.jpg" alt="Country Joe's Pets Logo" class="project-image" onclick="openFullscreen(event, 'fish_logo_final.jpg')">
                 <div class="project-content">
                     <h3>Country Joe's Pets Brand Identity</h3>
                     <p>Reimagined branding for a fictional pet store emphasizing humane, stress-free care with a chocolate bar-inspired design aesthetic.</p>
@@ -493,7 +493,7 @@
             </div>
 
             <div class="project-card clickable" onclick="openModal('modal4')">
-                <img src="Cyanotype_ingredients_final.png" alt="Cyanotype Process" class="project-image">
+                <img src="Cyanotype_ingredients_final.png" alt="Cyanotype Process" class="project-image" onclick="openFullscreen(event, 'Cyanotype_ingredients_final.png')">
                 <div class="project-content">
                     <h3>Cyanotype Postcard Project</h3>
                     <p>Process documentation for creating botanical art using traditional cyanotype printing techniques with natural materials and sunlight.</p>
@@ -506,7 +506,7 @@
             </div>
             
             <div class="project-card clickable" onclick="openModal('modal5')">
-                <img src="boat_water_sunset.jpg" alt="Autonomous Boat" class="project-image">
+                <img src="boat_water_sunset.jpg" alt="Autonomous Boat" class="project-image" onclick="openFullscreen(event, 'boat_water_sunset.jpg')">
                 <div class="project-content">
                     <h3>Autonomous Surface Vehicle</h3>
                     <p>GPS-navigated robotic boat designed to autonomously navigate between waypoints using custom navigation algorithms and real-time heading correction.</p>
@@ -526,8 +526,8 @@
         <div class="modal-content" onclick="event.stopPropagation()">
             <button class="modal-close" onclick="closeModal(event, 'modal1')">&times;</button>
             <div class="image-container">
-                <img src="take_the_leap_icons_final.png" alt="Take the Leap" class="modal-image" onclick="openFullscreen('take_the_leap_icons_final.png')">
-                <button class="fullscreen-btn" onclick="openFullscreen('take_the_leap_icons_final.png')">
+                <img src="take_the_leap_icons_final.png" alt="Take the Leap" class="modal-image" onclick="openFullscreen(event, 'take_the_leap_icons_final.png')">
+                <button class="fullscreen-btn" onclick="openFullscreen(event, 'take_the_leap_icons_final.png')">
                     <span>⛶</span> View Full Size
                 </button>
             </div>
@@ -566,8 +566,8 @@
         <div class="modal-content" onclick="event.stopPropagation()">
             <button class="modal-close" onclick="closeModal(event, 'modal2')">&times;</button>
             <div class="image-container">
-                <img src="infographic_final.png" alt="Infographic" class="modal-image" onclick="openFullscreen('infographic_final.png')">
-                <button class="fullscreen-btn" onclick="openFullscreen('infographic_final.png')">
+                <img src="infographic_final.png" alt="Infographic" class="modal-image" onclick="openFullscreen(event, 'infographic_final.png')">
+                <button class="fullscreen-btn" onclick="openFullscreen(event, 'infographic_final.png')">
                     <span>⛶</span> View Full Size
                 </button>
             </div>
@@ -608,8 +608,8 @@
         <div class="modal-content" onclick="event.stopPropagation()">
             <button class="modal-close" onclick="closeModal(event, 'modal3')">&times;</button>
             <div class="image-container">
-                <img src="fish_logo_final.png" alt="Country Joe's" onclick="openFullscreen('fish_logo_final.png')">
-                <button class="fullscreen-btn" onclick="openFullscreen('infographic_final.png')">
+                <img src="fish_logo_final.png" alt="Country Joe's" onclick="openFullscreen(event, 'fish_logo_final.png')">
+                <button class="fullscreen-btn" onclick="openFullscreen(event, 'infographic_final.png')">
                     <span>⛶</span> View Full Size
                 </button>
             </div>
@@ -650,10 +650,10 @@
             <button class="modal-close" onclick="closeModal(event, 'modal4')">&times;</button>
             <div class="carousel-container">
                 <div class="carousel-slide active">
-                    <img src="Cyanotype_ingredients_final.png" alt="Cyanotype 1" onclick="openFullscreen('Cyanotype_ingredients_final.png')">
+                    <img src="Cyanotype_ingredients_final.png" alt="Cyanotype 1" onclick="openFullscreen(event, 'Cyanotype_ingredients_final.png')">
                 </div>
                 <div class="carousel-slide">
-                    <img src="Cyanotype_result_final.png" alt="Cyanotype 2" onclick="openFullscreen('Cyanotype_result_final.png')">
+                    <img src="Cyanotype_result_final.png" alt="Cyanotype 2" onclick="openFullscreen(event, 'Cyanotype_result_final.png')">
                 </div>
                 <button class="carousel-btn prev" onclick="changeSlide(event, 'modal4', -1)">‹</button>
                 <button class="carousel-btn next" onclick="changeSlide(event, 'modal4', 1)">›</button>
@@ -703,19 +703,19 @@
             <button class="modal-close" onclick="closeModal(event, 'modal5')">&times;</button>
             <div class="carousel-container">
                 <div class="carousel-slide active">
-                    <img src="boat_water_sunset.jpg" alt="boat_water_sunset" onclick="openFullscreen('boat_water_sunset.jpg')">
+                    <img src="boat_water_sunset.jpg" alt="boat_water_sunset" onclick="openFullscreen(event, 'boat_water_sunset.jpg')">
                 </div>
                 <div class="carousel-slide">
-                    <img src="boat_render.jpg" alt="boat_render" onclick="openFullscreen('boat_render.jpg')">
+                    <img src="boat_render.jpg" alt="boat_render" onclick="openFullscreen(event, 'boat_render.jpg')">
                 </div>
                 <div class="carousel-slide">
-                    <img src="boat_evening_test.jpg" alt="boat_evening_test" onclick="openFullscreen('boat_evening_test.jpg')">
+                    <img src="boat_evening_test.jpg" alt="boat_evening_test" onclick="openFullscreen(event, 'boat_evening_test.jpg')">
                 </div>
                 <div class="carousel-slide">
-                    <img src="boat_lake_testing.jpg" alt="boat_lake_testing" onclick="openFullscreen('boat_lake_testing.jpg')">
+                    <img src="boat_lake_testing.jpg" alt="boat_lake_testing" onclick="openFullscreen(event, 'boat_lake_testing.jpg')">
                 </div>
                 <div class="carousel-slide">
-                    <img src="boat_prototype_closeup.jpg" alt="boat_prototype_closeup" onclick="openFullscreen('boat_prototype_closeup.jpg')">
+                    <img src="boat_prototype_closeup.jpg" alt="boat_prototype_closeup" onclick="openFullscreen(event, 'boat_prototype_closeup.jpg')">
                 </div>
 
                 <button class="carousel-btn prev" onclick="changeSlide(event, 'modal5', -1)">‹</button>
@@ -841,8 +841,8 @@
             });
         }
 
-        function openFullscreen(imageSrc) {
-            event.stopPropagation();
+        function openFullscreen(e, imageSrc) {
+            e.stopPropagation();
             const overlay = document.getElementById('fullscreenOverlay');
             const image = document.getElementById('fullscreenImage');
             
