@@ -941,13 +941,16 @@
             <button class="modal-close" onclick="closeModal(event, 'modal6')">&times;</button>
             <div class="carousel-container">
                 <div class="carousel-slide active">
-                    <img src="muon_detector_lake.png" alt="Detector on Lake" onclick="openFullscreen('muon_detector_lake.jpg')">
+                    <img src="muon_detector_lake.png" alt="Detector on Lake" onclick="openFullscreen('muon_detector_lake.png')">
                 </div>
                 <div class="carousel-slide">
-                    <img src="muon_housing_design.jpg" alt="Housing Design" onclick="openFullscreen('muon_housing_design.jpg')">
+                    <img src="muon_housing_design_v1.png" alt="Housing Design" onclick="openFullscreen('muon_housing_design_v1.png')">
                 </div>
                 <div class="carousel-slide">
-                    <img src="muon_data_graph.jpg" alt="Data Results" onclick="openFullscreen('muon_data_graph.jpg')">
+                    <img src="muon_housing_design_v2.png" alt="Housing Design V2" onclick="openFullscreen('muon_housing_design_v2.png')">
+                </div>
+                <div class="carousel-slide">
+                    <img src="muon_data_graph.jpg" alt="Muon Attenuation at Water Depth Data" onclick="openFullscreen('muon_data_graph.jpg')">
                 </div>
                 <button class="carousel-btn prev" onclick="changeSlide(event, 'modal6', -1)">‹</button>
                 <button class="carousel-btn next" onclick="changeSlide(event, 'modal6', 1)">›</button>
@@ -958,6 +961,7 @@
                     <span class="indicator active" onclick="goToSlide(event, 'modal6', 0)"></span>
                     <span class="indicator" onclick="goToSlide(event, 'modal6', 1)"></span>
                     <span class="indicator" onclick="goToSlide(event, 'modal6', 2)"></span>
+                    <span class="indicator" onclick="goToSlide(event, 'modal6', 3)"></span>
                 </div>
             </div>
             <div class="modal-body">
@@ -1035,11 +1039,11 @@
                     <h3>PM Skills Demonstrated</h3>
                     <ul>
                         <li>Requirements definition under conflicting constraints (safety, budget, physics goals)</li>
-                        <li>Rapid iteration and fail-fast mentality when designs didn't meet field conditions</li>
+                        <li>Rapid iteration when designs didn't meet field conditions</li>
                         <li>Risk mitigation through redundant systems (nested waterproofing, tether backup)</li>
                         <li>Data analysis to identify root causes of systematic errors</li>
-                        <li>Technical communication: Authored comprehensive research paper documenting methodology</li>
-                        <li>Roadmap planning based on failure mode analysis and user feedback</li>
+                        <li>Technical communication: Authored comprehensive research paper documenting methodology for class</li>
+                        <li>Roadmap planning based on failure mode analysis experiment results</li>
                     </ul>
                 </div>
             </div>
