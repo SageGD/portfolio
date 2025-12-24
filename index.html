@@ -472,14 +472,14 @@
     <header>
         <h1>Sage Gilbert-Diamond | Portfolio</h1>
         <p>Product Manager | Building data-driven products that solve real problems</p>
-        <p>Wellesley '26 Physics B.A. | Olin '27 Engineering B.S. | MIT Research</p>
+        <p>Wellesley '26 | Olin College Cross-Registration | MIT Research</p>
         <p>sg115[at]wellesley.edu</p>
     </header>
 
     <div class="container">
         <h2 class="section-title">Product Portfolio</h2>
         <p style="color: #666; margin-bottom: 2rem; font-size: 1.05rem;">
-            Product manager with experience in hardware-software integration, AI/ML products, and data-driven decision making. Skilled at scoping MVPs, prioritizing features based on ROI, and translating technical complexity into user value. Track record includes: achieving 88.75% ML model accuracy, increasing production from ideation sessions by 40%, and shipping an autonomous navigation system through iterative development.
+            Product manager with experience in hardware-software integration, AI/ML products, and data-driven decision making. Skilled at scoping MVPs, prioritizing features based on ROI, and translating technical complexity into user value. Track record includes: achieving 88.75% ML model accuracy, reducing design production time by 40%, and shipping 0→1 autonomous systems through iterative development.
         </p>
         
         <div class="projects-grid">
@@ -511,21 +511,6 @@
                 </div>
             </div>
 
-            <div class="project-card clickable" onclick="openModal('modal6')">
-                <img src="muon_detector_lake.jpeg" alt="Muon Detector Research" class="project-image">
-                <div class="project-content">
-                    <h3>Underwater Muon Detection System</h3>
-                    <p>Led experimental physics project measuring cosmic ray attenuation in water. Designed waterproof housing, optimized detector configuration through iterative testing, and delivered results within budget and safety constraints.</p>
-                    <div class="tags">
-                        <span class="tag">Hardware Product Development</span>
-                        <span class="tag">Rapid Prototyping</span>
-                        <span class="tag">Constraint-Based Design</span>
-                        <span class="tag">Data Analysis</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-
             <div class="project-card clickable" onclick="openModal('modal3')">
                 <img src="infographic_final.png" alt="Wellesley College Data" class="project-image">
                 <div class="project-content">
@@ -536,6 +521,20 @@
                         <span class="tag">User Insights</span>
                         <span class="tag">Product Metrics</span>
                         <span class="tag">Visual Communication</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card clickable" onclick="openModal('modal4')">
+                <img src="take_the_leap_icons_final.png" alt="Take the Leap Icons" class="project-image">
+                <div class="project-content">
+                    <h3>Brand Design System</h3>
+                    <p>Created scalable icon system for motivational brand. Established design principles, documented guidelines, and delivered reusable components that improved cross-platform consistency and user engagement.</p>
+                    <div class="tags">
+                        <span class="tag">Design Systems</span>
+                        <span class="tag">Brand Strategy</span>
+                        <span class="tag">Documentation</span>
+                        <span class="tag">Scalability</span>
                     </div>
                 </div>
             </div>
@@ -553,6 +552,35 @@
                     </div>
                 </div>
             </div>
+
+            <div class="project-card clickable" onclick="openModal('modal6')">
+                <img src="muon_detector_lake.jpg" alt="Muon Detector Research" class="project-image">
+                <div class="project-content">
+                    <h3>Underwater Muon Detection System</h3>
+                    <p>Led experimental physics project measuring cosmic ray attenuation in water. Designed waterproof housing, optimized detector configuration through iterative testing, and delivered results within budget and safety constraints.</p>
+                    <div class="tags">
+                        <span class="tag">Hardware Product Development</span>
+                        <span class="tag">Rapid Prototyping</span>
+                        <span class="tag">Constraint-Based Design</span>
+                        <span class="tag">Data Analysis</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card clickable" onclick="openModal('modal7')">
+                <img src="lodestone_lab.jpg" alt="Lodestone Biomedical" class="project-image">
+                <div class="project-content">
+                    <h3>Medical Device R&D Internship</h3>
+                    <p>Product intern at early-stage biomedical startup developing magnetic nanoparticle detection technology. Led multiplexing proof-of-concept, coordinated cross-functional experiment schedules, and created investor communications.</p>
+                    <div class="tags">
+                        <span class="tag">Cross-Functional Coordination</span>
+                        <span class="tag">Experiment Planning</span>
+                        <span class="tag">Data Visualization</span>
+                        <span class="tag">Stakeholder Communication</span>
+                    </div>
+                </div>
+            </div>
+        </div>
 
         <div style="margin-top: 4rem; padding: 2rem; background: white; border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
             <h2 class="section-title" style="margin-bottom: 1.5rem;">Product Management Approach</h2>
@@ -823,22 +851,117 @@
         </div>
     </div>
 
-        <!-- Modal 6: Muon Detector -->
+    <!-- Modal 4: Brand Design System -->
+    <div id="modal4" class="modal" onclick="closeModal(event, 'modal4')">
+        <div class="modal-content" onclick="event.stopPropagation()">
+            <button class="modal-close" onclick="closeModal(event, 'modal4')">&times;</button>
+            <div class="image-container">
+                <img src="take_the_leap_icons_final.png" alt="Take the Leap" class="modal-image" onclick="openFullscreen('take_the_leap_icons_final.png')">
+                <button class="fullscreen-btn" onclick="openFullscreen('take_the_leap_icons_final.png')">
+                    <span>⛶</span> View Full Size
+                </button>
+            </div>
+            <div class="modal-body">
+                <h2>Brand Design System</h2>
+                <div class="tags">
+                    <span class="tag">Design Systems</span>
+                    <span class="tag">Brand Strategy</span>
+                    <span class="tag">Documentation</span>
+                    <span class="tag">Scalability</span>
+                </div>
+                <p class="modal-description">
+                    Created a comprehensive icon system to illustrate cultural differences between educational institutions. Established design principles and visual language to ensure consistency across all brand touchpoints. Delivered scalable components that reduced design time by 40% and improved brand recognition.
+                </p>
+                <div class="modal-section">
+                    <h3>Product Approach</h3>
+                    <ul>
+                        <li>Defined design requirements through stakeholder interviews and competitive analysis</li>
+                        <li>Prioritized icon creation based on usage frequency and brand impact</li>
+                        <li>Created design documentation and guidelines for future extension</li>
+                        <li>Validated designs through user feedback and iteration</li>
+                    </ul>
+                </div>
+                <div class="modal-section">
+                    <h3>Impact & Outcomes</h3>
+                    <ul>
+                        <li>Established reusable design system reducing production time by 40%</li>
+                        <li>Improved brand consistency across digital and print materials</li>
+                        <li>Enabled non-designers to use brand assets effectively through clear documentation</li>
+                        <li>Created scalable foundation for future brand extensions</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 5: Process Documentation -->
+    <div id="modal5" class="modal" onclick="closeModal(event, 'modal5')">
+        <div class="modal-content" onclick="event.stopPropagation()">
+            <button class="modal-close" onclick="closeModal(event, 'modal5')">&times;</button>
+            <div class="carousel-container">
+                <div class="carousel-slide active">
+                    <img src="Cyanotype_ingredients_final.png" alt="Cyanotype 1" onclick="openFullscreen('Cyanotype_ingredients_final.png')">
+                </div>
+                <div class="carousel-slide">
+                    <img src="Cyanotype_result_final.png" alt="Cyanotype 2" onclick="openFullscreen('Cyanotype_result_final.png')">
+                </div>
+                <button class="carousel-btn prev" onclick="changeSlide(event, 'modal5', -1)">‹</button>
+                <button class="carousel-btn next" onclick="changeSlide(event, 'modal5', 1)">›</button>
+                <button class="fullscreen-btn" onclick="getCurrentCarouselImage(event, 'modal5')">
+                    <span>⛶</span> View Full Size
+                </button>
+                <div class="carousel-indicators">
+                    <span class="indicator active" onclick="goToSlide(event, 'modal5', 0)"></span>
+                    <span class="indicator" onclick="goToSlide(event, 'modal5', 1)"></span>
+                </div>
+            </div>
+            <div class="modal-body">
+                <h2>Process Documentation Project</h2>
+                <div class="tags">
+                    <span class="tag">User Experience</span>
+                    <span class="tag">Technical Writing</span>
+                    <span class="tag">Process Optimization</span>
+                    <span class="tag">Information Design</span>
+                </div>
+                <p class="modal-description">
+                    Designed end-to-end instructional experience for cyanotype printing process. Reduced onboarding friction through user-centered information architecture and clear visual hierarchy. Transformed complex 8-step workflow into accessible experience for users with no prior knowledge.
+                </p>
+                <div class="modal-section">
+                    <h3>User-Centered Design Approach</h3>
+                    <ul>
+                        <li>Mapped user journey to identify pain points and failure modes</li>
+                        <li>Structured information hierarchy prioritizing safety and timing-critical steps</li>
+                        <li>Created visual documentation reducing cognitive load</li>
+                        <li>Validated instructions with novice users to ensure clarity</li>
+                        <li>Iterated based on user feedback to eliminate confusion points</li>
+                    </ul>
+                </div>
+                <div class="modal-section">
+                    <h3>Product Outcomes</h3>
+                    <ul>
+                        <li>Reduced learning curve enabling first-time success for new users</li>
+                        <li>Created repeatable framework for documenting other analog processes</li>
+                        <li>Demonstrated ability to simplify complex workflows through clear communication</li>
+                        <li>Applied product thinking to non-digital experience design</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 6: Muon Detector -->
     <div id="modal6" class="modal" onclick="closeModal(event, 'modal6')">
         <div class="modal-content" onclick="event.stopPropagation()">
             <button class="modal-close" onclick="closeModal(event, 'modal6')">&times;</button>
             <div class="carousel-container">
                 <div class="carousel-slide active">
-                    <img src="muon_detector_lake.jpeg" alt="Detector on Lake" onclick="openFullscreen('muon_detector_lake.jpeg')">
+                    <img src="muon_detector_lake.jpg" alt="Detector on Lake" onclick="openFullscreen('muon_detector_lake.jpg')">
                 </div>
                 <div class="carousel-slide">
-                    <img src="muon_housing_design_v1.png" alt="Housing Design" onclick="openFullscreen('muon_housing_design_v1.png')">
+                    <img src="muon_housing_design.jpg" alt="Housing Design" onclick="openFullscreen('muon_housing_design.jpg')">
                 </div>
                 <div class="carousel-slide">
-                    <img src="muon_housing_design_v2.png" alt="Housing Design V2" onclick="openFullscreen('muon_housing_design_v2.png')">
-                </div>
-                <div class="carousel-slide">
-                    <img src="muon_data_graph.png" alt="Muon Attenuation at Water Depth Data" onclick="openFullscreen('muon_data_graph.png')">
+                    <img src="muon_data_graph.jpg" alt="Data Results" onclick="openFullscreen('muon_data_graph.jpg')">
                 </div>
                 <button class="carousel-btn prev" onclick="changeSlide(event, 'modal6', -1)">‹</button>
                 <button class="carousel-btn next" onclick="changeSlide(event, 'modal6', 1)">›</button>
@@ -849,7 +972,6 @@
                     <span class="indicator active" onclick="goToSlide(event, 'modal6', 0)"></span>
                     <span class="indicator" onclick="goToSlide(event, 'modal6', 1)"></span>
                     <span class="indicator" onclick="goToSlide(event, 'modal6', 2)"></span>
-                    <span class="indicator" onclick="goToSlide(event, 'modal6', 3)"></span>
                 </div>
             </div>
             <div class="modal-body">
@@ -927,66 +1049,11 @@
                     <h3>PM Skills Demonstrated</h3>
                     <ul>
                         <li>Requirements definition under conflicting constraints (safety, budget, physics goals)</li>
-                        <li>Rapid iteration when designs didn't meet field conditions</li>
+                        <li>Rapid iteration and fail-fast mentality when designs didn't meet field conditions</li>
                         <li>Risk mitigation through redundant systems (nested waterproofing, tether backup)</li>
                         <li>Data analysis to identify root causes of systematic errors</li>
-                        <li>Technical communication: Authored comprehensive research paper documenting methodology for class</li>
-                        <li>Roadmap planning based on failure mode analysis experiment results</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Modal 5: Process Documentation -->
-    <div id="modal5" class="modal" onclick="closeModal(event, 'modal5')">
-        <div class="modal-content" onclick="event.stopPropagation()">
-            <button class="modal-close" onclick="closeModal(event, 'modal5')">&times;</button>
-            <div class="carousel-container">
-                <div class="carousel-slide active">
-                    <img src="Cyanotype_ingredients_final.png" alt="Cyanotype 1" onclick="openFullscreen('Cyanotype_ingredients_final.png')">
-                </div>
-                <div class="carousel-slide">
-                    <img src="Cyanotype_result_final.png" alt="Cyanotype 2" onclick="openFullscreen('Cyanotype_result_final.png')">
-                </div>
-                <button class="carousel-btn prev" onclick="changeSlide(event, 'modal5', -1)">‹</button>
-                <button class="carousel-btn next" onclick="changeSlide(event, 'modal5', 1)">›</button>
-                <button class="fullscreen-btn" onclick="getCurrentCarouselImage(event, 'modal5')">
-                    <span>⛶</span> View Full Size
-                </button>
-                <div class="carousel-indicators">
-                    <span class="indicator active" onclick="goToSlide(event, 'modal5', 0)"></span>
-                    <span class="indicator" onclick="goToSlide(event, 'modal5', 1)"></span>
-                </div>
-            </div>
-            <div class="modal-body">
-                <h2>Process Documentation Project</h2>
-                <div class="tags">
-                    <span class="tag">User Experience</span>
-                    <span class="tag">Technical Writing</span>
-                    <span class="tag">Process Optimization</span>
-                    <span class="tag">Information Design</span>
-                </div>
-                <p class="modal-description">
-                    Designed end-to-end instructional experience for cyanotype printing process. Reduced onboarding friction through user-centered information architecture and clear visual hierarchy. Transformed complex 8-step workflow into accessible experience for users with no prior knowledge.
-                </p>
-                <div class="modal-section">
-                    <h3>User-Centered Design Approach</h3>
-                    <ul>
-                        <li>Mapped user journey to identify pain points and failure modes</li>
-                        <li>Structured information hierarchy prioritizing safety and timing-critical steps</li>
-                        <li>Created visual documentation reducing cognitive load</li>
-                        <li>Validated instructions with novice users to ensure clarity</li>
-                        <li>Iterated based on user feedback to eliminate confusion points</li>
-                    </ul>
-                </div>
-                <div class="modal-section">
-                    <h3>Product Outcomes</h3>
-                    <ul>
-                        <li>Reduced learning curve enabling first-time success for new users</li>
-                        <li>Created repeatable framework for documenting other analog processes</li>
-                        <li>Demonstrated ability to simplify complex workflows through clear communication</li>
-                        <li>Applied product thinking to non-digital experience design</li>
+                        <li>Technical communication: Authored comprehensive research paper documenting methodology</li>
+                        <li>Roadmap planning based on failure mode analysis and user feedback</li>
                     </ul>
                 </div>
             </div>
@@ -1003,6 +1070,126 @@
         <button class="fullscreen-nav next" onclick="fullscreenNavigate(1)">›</button>
     </div>
 
+    <!-- Modal 7: Lodestone Biomedical -->
+    <div id="modal7" class="modal" onclick="closeModal(event, 'modal7')">
+        <div class="modal-content" onclick="event.stopPropagation()">
+            <button class="modal-close" onclick="closeModal(event, 'modal7')">&times;</button>
+            <div class="carousel-container">
+                <div class="carousel-slide active">
+                    <img src="lodestone_lab.jpg" alt="Lab Work" onclick="openFullscreen('lodestone_lab.jpg')">
+                </div>
+                <div class="carousel-slide">
+                    <img src="lodestone_multiplexing.jpg" alt="Multiplexing Experiment" onclick="openFullscreen('lodestone_multiplexing.jpg')">
+                </div>
+                <div class="carousel-slide">
+                    <img src="lodestone_animation.jpg" alt="Animation Video" onclick="openFullscreen('lodestone_animation.jpg')">
+                </div>
+                <button class="carousel-btn prev" onclick="changeSlide(event, 'modal7', -1)">‹</button>
+                <button class="carousel-btn next" onclick="changeSlide(event, 'modal7', 1)">›</button>
+                <button class="fullscreen-btn" onclick="getCurrentCarouselImage(event, 'modal7')">
+                    <span>⛶</span> View Full Size
+                </button>
+                <div class="carousel-indicators">
+                    <span class="indicator active" onclick="goToSlide(event, 'modal7', 0)"></span>
+                    <span class="indicator" onclick="goToSlide(event, 'modal7', 1)"></span>
+                    <span class="indicator" onclick="goToSlide(event, 'modal7', 2)"></span>
+                </div>
+            </div>
+            <div class="modal-body">
+                <h2>Medical Device R&D Internship</h2>
+                <div class="tags">
+                    <span class="tag">Cross-Functional Coordination</span>
+                    <span class="tag">Experiment Planning</span>
+                    <span class="tag">Data Visualization</span>
+                    <span class="tag">Stakeholder Communication</span>
+                </div>
+                <p class="modal-description">
+                    Product intern at Lodestone Biomedical, an early-stage startup developing magnetic nanoparticle detection technology for medical diagnostics. Led proof-of-concept multiplexing experiment, coordinated complex multi-stakeholder experiment schedules under tight constraints, and created investor-facing animated explainer of core technology. Demonstrated ability to navigate ambiguity in startup environment while delivering results across technical and business domains.
+                </p>
+                <div class="modal-section">
+                    <h3>Company & Technology Context</h3>
+                    <ul>
+                        <li>Lodestone Biomedical: Early-stage medical device startup in Lebanon, NH</li>
+                        <li>Core technology: Magnetic nanoparticle detection system for diagnostics</li>
+                        <li>Challenge: Prove multiplexing capability to detect multiple biomarkers simultaneously</li>
+                        <li>Startup stage: Pre-commercial, focused on proof-of-concept and investor validation</li>
+                    </ul>
+                </div>
+                <div class="modal-section">
+                    <h3>Cross-Functional Experiment Coordination</h3>
+                    <ul>
+                        <li>Problem: Schedule in vivo mouse experiments with conflicting constraints across personnel, nanoparticle shelf life, and variable experimental timelines</li>
+                        <li>Stakeholder mapping: Coordinated schedules across engineering team, biologists, senior researchers, and external collaborators</li>
+                        <li>Created comprehensive experiment calendar balancing: nanoparticle sample expiration dates, team member availability/PTO, varied experimental protocols (ranging days to weeks)</li>
+                        <li>Validation process: Presented plan to senior researcher, iterated based on feedback</li>
+                        <li>Outcome: Enabled efficient use of expensive nanoparticle samples and maximized team productivity</li>
+                    </ul>
+                </div>
+                <div class="modal-section">
+                    <h3>Multiplexing Proof-of-Concept Leadership</h3>
+                    <ul>
+                        <li>Goal: Demonstrate device could detect concentrations of two different nanoparticles in mixed samples</li>
+                        <li>Experimental design: Pure samples of two nanoparticle types + mixed samples with varying ratios</li>
+                        <li>Hypothesis: Device signal analysis could deconvolve mixed sample to determine individual concentrations</li>
+                        <li>Data collection: Organized and measured samples in early-stage detection device</li>
+                        <li>Analysis: Created graphical visualizations of error in multiplexing model to identify systematic issues</li>
+                        <li>Result: Achieved proof-of-concept by end of summer, validating core technology assumption for investors</li>
+                    </ul>
+                </div>
+                <div class="modal-section">
+                    <h3>Technical Communication & Investor Relations</h3>
+                    <ul>
+                        <li>Challenge: Explain complex magnetic nanoparticle technology to non-technical investor audience</li>
+                        <li>Solution: Self-taught Blender 3D animation software over summer</li>
+                        <li>Deliverable: Created 1-minute animated explainer video for company website showing technology mechanism</li>
+                        <li>Impact: Provided critical investor communication tool for startup fundraising efforts</li>
+                        <li>Demonstrated initiative: Identified need and acquired new technical skill independently</li>
+                    </ul>
+                </div>
+                <div class="modal-section">
+                    <h3>Cross-Functional Collaboration</h3>
+                    <ul>
+                        <li>Worked with biologist collaborators to understand nanoparticle-biological system interactions</li>
+                        <li>Presented multiplexing experimental findings to biology team to maintain alignment</li>
+                        <li>Translated technical findings across disciplines (engineering, biology, business)</li>
+                        <li>Balanced multiple reporting relationships: engineers, senior researchers, external collaborators</li>
+                    </ul>
+                </div>
+                <div class="modal-section">
+                    <h3>Additional Technical Contributions</h3>
+                    <ul>
+                        <li>Programmed mini computer to control positioning of sampling bed during device scans</li>
+                        <li>Rewired and mapped transformer box for device power systems</li>
+                        <li>Assisted in experimental protocol development coordinating personnel within constraint</li>
+                        <li>Presented experimental results in both written reports and oral presentations</li>
+                    </ul>
+                </div>
+                <div class="modal-section">
+                    <h3>Product Management Skills Demonstrated</h3>
+                    <ul>
+                        <li>Project planning: Created multi-constraint schedule for complex experiments with tight dependencies</li>
+                        <li>Stakeholder management: Coordinated across engineering, biology, and business functions</li>
+                        <li>Technical execution: Led proof-of-concept experiment from design through analysis</li>
+                        <li>Communication: Translated complex technology for investor and cross-functional audiences</li>
+                        <li>Resourcefulness: Self-taught new tools (Blender) to solve business need</li>
+                        <li>Startup adaptability: Thrived in ambiguous environment with evolving priorities</li>
+                        <li>Data-driven decision making: Used visualization to identify model errors and inform iterations</li>
+                    </ul>
+                </div>
+                <div class="modal-section">
+                    <h3>Impact & Business Value</h3>
+                    <ul>
+                        <li>Delivered multiplexing proof-of-concept, validating key product capability for investors</li>
+                        <li>Optimized expensive experimental resources through effective scheduling</li>
+                        <li>Created reusable investor communication asset (animated video)</li>
+                        <li>Enabled cross-functional alignment through regular presentation of findings</li>
+                        <li>Contributed to early-stage product development at critical validation phase</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <script>
         const modalStates = {
             modal1: 0,
@@ -1010,7 +1197,8 @@
             modal3: 0,
             modal4: 0,
             modal5: 0,
-            modal6: 0
+            modal6: 0,
+            modal7: 0
         };
 
         let fullscreenState = {
@@ -1100,7 +1288,7 @@
             const image = document.getElementById('fullscreenImage');
             
             overlay.classList.add('has-carousel');
-            image.src = images[currentIndex];<span class="indicator" onclick="goToSlide(event, 'modal6', 2)"></span>
+            image.src = images[currentIndex];
             overlay.classList.add('active');
             document.body.style.overflow = 'hidden';
         }
@@ -1142,6 +1330,7 @@
     </script>
 
     <footer>
+        <p style="margin-bottom: 0.5rem;"><strong>Core PM Competencies:</strong> Product Strategy • Roadmap Planning • User Research • Data Analytics • Stakeholder Management • Technical Communication • Agile/Iterative Development • ROI Analysis</p>
         <p>&copy; 2025 Sage Gilbert-Diamond. Available for Product Management roles and internships.</p>
     </footer>
 </body>
