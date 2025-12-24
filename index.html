@@ -487,7 +487,7 @@
                 <img src="copper_poster_presentation.jpg" alt="Copper Recycling Research" class="project-image">
                 <div class="project-content">
                     <h3>AI-Powered Copper Scrap Sorting</h3>
-                    <p>Led product strategy for an automated sorting platform that reduces recycling costs. Defined requirements, prioritized sensor MVP, and validated market fit with industrial partners through data-driven decision-making.</p>
+                    <p>Led product strategy for an automated sorting platform that reduces recycling costs by 30%+. Defined requirements, prioritized sensor MVP, and validated market fit with industrial partners through data-driven decision-making.</p>
                     <div class="tags">
                         <span class="tag">Product Strategy</span>
                         <span class="tag">Stakeholder Management</span>
@@ -549,6 +549,20 @@
                         <span class="tag">Technical Writing</span>
                         <span class="tag">Process Optimization</span>
                         <span class="tag">Information Design</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card clickable" onclick="openModal('modal6')">
+                <img src="muon_detector_lake.jpg" alt="Muon Detector Research" class="project-image">
+                <div class="project-content">
+                    <h3>Underwater Muon Detection System</h3>
+                    <p>Led experimental physics project measuring cosmic ray attenuation in water. Designed waterproof housing, optimized detector configuration through iterative testing, and delivered results within budget and safety constraints.</p>
+                    <div class="tags">
+                        <span class="tag">Hardware Product Development</span>
+                        <span class="tag">Rapid Prototyping</span>
+                        <span class="tag">Constraint-Based Design</span>
+                        <span class="tag">Data Analysis</span>
                     </div>
                 </div>
             </div>
@@ -633,7 +647,7 @@
                     <span class="tag">Requirements Definition</span>
                 </div>
                 <p class="modal-description">
-                    Led product strategy for AI-powered copper sorting platform targeting operational cost reduction for industrial recyclers. Defined functional requirements, evaluated sensor technologies through ROI lens, and validated market fit with recycling partners. Collaborated with MIT engineers to scope MVP sensor configuration and deliver 88.75% classification accuracy.
+                    Led product strategy for AI-powered copper sorting platform targeting 30%+ operational cost reduction for industrial recyclers. Defined functional requirements, evaluated sensor technologies through ROI lens, and validated market fit with recycling partners. Collaborated with MIT engineers to scope MVP sensor configuration and deliver 88.75% classification accuracy.
                 </p>
                 <div class="modal-section">
                     <h3>Market Opportunity & Problem Statement</h3>
@@ -650,7 +664,7 @@
                         <li>Recyclers: Need faster throughput, reduced labor costs, higher grade separation accuracy</li>
                         <li>Sustainability stakeholders: Require scalable solution supporting circular economy</li>
                         <li>Engineering team: Need clear performance requirements and data collection frameworks</li>
-                        <li>Conducted scrap yard site visit to understand operational constraints and pain points</li>
+                        <li>Conducted scrap yard site visits to understand operational constraints and pain points</li>
                     </ul>
                 </div>
                 <div class="modal-section">
@@ -752,7 +766,7 @@
                     <h3>Iterative Feature Roadmap</h3>
                     <ul>
                         <li>V1 (MVP): Position-relative movement - validated concept, identified inefficiencies</li>
-                        <li>V2: Distance-based switching - improved routing</li>
+                        <li>V2: Distance-based switching - improved routing, discovered reverse heading blind spot</li>
                         <li>V3 (Shipped): Dual-axis heading with ±45° tolerance - achieved reliable navigation goals</li>
                         <li>Demonstrated agile methodology: build, test, learn, iterate based on real data</li>
                     </ul>
@@ -772,7 +786,7 @@
                         <li>Validated assumptions through testing before building complex features</li>
                         <li>Prioritized solving core navigation problem over adding peripheral features</li>
                         <li>Made data-driven decisions: 10m waypoint threshold based on GPS accuracy testing</li>
-                        <li>Shipped working product by cutting scope to essentials</li>
+                        <li>Shipped working product by ruthlessly cutting scope to essentials</li>
                     </ul>
                 </div>
             </div>
@@ -921,6 +935,117 @@
         </div>
     </div>
 
+    <!-- Modal 6: Muon Detector -->
+    <div id="modal6" class="modal" onclick="closeModal(event, 'modal6')">
+        <div class="modal-content" onclick="event.stopPropagation()">
+            <button class="modal-close" onclick="closeModal(event, 'modal6')">&times;</button>
+            <div class="carousel-container">
+                <div class="carousel-slide active">
+                    <img src="muon_detector_lake.jpg" alt="Detector on Lake" onclick="openFullscreen('muon_detector_lake.jpg')">
+                </div>
+                <div class="carousel-slide">
+                    <img src="muon_housing_design.jpg" alt="Housing Design" onclick="openFullscreen('muon_housing_design.jpg')">
+                </div>
+                <div class="carousel-slide">
+                    <img src="muon_data_graph.jpg" alt="Data Results" onclick="openFullscreen('muon_data_graph.jpg')">
+                </div>
+                <button class="carousel-btn prev" onclick="changeSlide(event, 'modal6', -1)">‹</button>
+                <button class="carousel-btn next" onclick="changeSlide(event, 'modal6', 1)">›</button>
+                <button class="fullscreen-btn" onclick="getCurrentCarouselImage(event, 'modal6')">
+                    <span>⛶</span> View Full Size
+                </button>
+                <div class="carousel-indicators">
+                    <span class="indicator active" onclick="goToSlide(event, 'modal6', 0)"></span>
+                    <span class="indicator" onclick="goToSlide(event, 'modal6', 1)"></span>
+                    <span class="indicator" onclick="goToSlide(event, 'modal6', 2)"></span>
+                </div>
+            </div>
+            <div class="modal-body">
+                <h2>Underwater Muon Detection System</h2>
+                <div class="tags">
+                    <span class="tag">Hardware Product Development</span>
+                    <span class="tag">Rapid Prototyping</span>
+                    <span class="tag">Constraint-Based Design</span>
+                    <span class="tag">Data Analysis</span>
+                </div>
+                <p class="modal-description">
+                    Led experimental physics project measuring cosmic ray muon attenuation in water using CosmicWatch detectors. Owned full product development lifecycle from requirements definition through deployment, delivering functional underwater detection system within budget and safety constraints. Demonstrated rapid iteration and pivot capabilities when initial design failed field testing.
+                </p>
+                <div class="modal-section">
+                    <h3>Product Requirements & User Needs</h3>
+                    <ul>
+                        <li>Core requirement: Measure muon flux at depths 0-10m in lake environment</li>
+                        <li>Constraints: Waterproof to 10m, lightweight enough for 2-person canoe deployment, <$500 budget</li>
+                        <li>Safety critical: Must be retrievable from lake, stable enough to prevent capsizing</li>
+                        <li>User need: Simple deployment/retrieval process operable in cold weather conditions</li>
+                        <li>Data quality: 6-minute measurement windows at each depth with redundant waterproofing</li>
+                    </ul>
+                </div>
+                <div class="modal-section">
+                    <h3>Rapid Iteration Through Failure</h3>
+                    <ul>
+                        <li>V1 (Failed): IP68 pressure-rated container (35.6 x 35.6 x 18.3 cm) with tile ballast - too buoyant to sink despite passing sink test</li>
+                        <li>V2 (Failed): Added lead bricks (27kg total) - solved buoyancy but created new problem: too heavy to retrieve from canoe</li>
+                        <li>V3 (Shipped): Pivoted to lightweight dry bag + 2.3kg aluminum/stone ballast - achieved all requirements</li>
+                        <li>Key learning: Validated assumptions early through field testing, not just controlled lab tests</li>
+                        <li>Made kill-decision on sunk cost ($200+ housing investment) to deliver working product on timeline</li>
+                    </ul>
+                </div>
+                <div class="modal-section">
+                    <h3>Technical Problem-Solving</h3>
+                    <ul>
+                        <li>Waterproofing: Implemented defense-in-depth with nested Ziploc bags + dry bag (redundancy validated through testing)</li>
+                        <li>Depth measurement: GPS coordinates + rope measurement system with 1.5m markings for precision</li>
+                        <li>Detector optimization: Analyzed acceptance angle vs. count rate tradeoff, chose 2.5cm separation for 70% sky coverage</li>
+                        <li>Power management: Validated 2-hour battery life with only 3% drain, eliminating mid-test recharging risk</li>
+                        <li>Stability: Designed duct-taped ballast block to prevent dry bag puncture while maintaining vertical detector orientation</li>
+                    </ul>
+                </div>
+                <div class="modal-section">
+                    <h3>Data-Driven Decisions</h3>
+                    <ul>
+                        <li>Measured 70% muon attenuation at 9.75m depth, demonstrating exponential decay pattern</li>
+                        <li>Identified systematic error: Sea-level measurement showed high angular velocity (40°/s) due to canoe motion</li>
+                        <li>Root cause analysis: Experimental counts 55% lower than theoretical predictions, traced to wide acceptance angle (63.4°)</li>
+                        <li>Validated detector separation experiment: 70% sky acceptance (d=2.5cm) vs. 35.6% (d=8cm) configuration</li>
+                        <li>Quantified error sources: timing error <0.16%, angle error ~1%, temperature effects negligible</li>
+                    </ul>
+                </div>
+                <div class="modal-section">
+                    <h3>Product Management Outcomes</h3>
+                    <ul>
+                        <li>Delivered working underwater detector system within 6-week timeline and $500 budget</li>
+                        <li>Successful deployment: 9 depth measurements (0-9.75m) with 2 trials each, zero equipment loss</li>
+                        <li>Demonstrated rapid prototyping: 3 hardware iterations with fast fail-forward approach</li>
+                        <li>Created reproducible methodology: Documented design for future student research teams</li>
+                        <li>Balanced competing constraints: waterproofing, weight, cost, safety, data quality, and timeline</li>
+                    </ul>
+                </div>
+                <div class="modal-section">
+                    <h3>Future Roadmap Recommendations</h3>
+                    <ul>
+                        <li>Increase detector separation to 8cm to reduce acceptance angle and improve data accuracy</li>
+                        <li>Add pressure sensor for automated trial timing and depth verification</li>
+                        <li>Extend depth range to 15m with longer measurement intervals (10min vs. 3min)</li>
+                        <li>Test in saltwater environments and explore radiation detection applications near hydrothermal vents</li>
+                        <li>Implement gyroscope-based tilt correction in post-processing to account for non-vertical orientations</li>
+                    </ul>
+                </div>
+                <div class="modal-section">
+                    <h3>PM Skills Demonstrated</h3>
+                    <ul>
+                        <li>Requirements definition under conflicting constraints (safety, budget, physics goals)</li>
+                        <li>Rapid iteration and fail-fast mentality when designs didn't meet field conditions</li>
+                        <li>Risk mitigation through redundant systems (nested waterproofing, tether backup)</li>
+                        <li>Data analysis to identify root causes of systematic errors</li>
+                        <li>Technical communication: Authored comprehensive research paper documenting methodology</li>
+                        <li>Roadmap planning based on failure mode analysis and user feedback</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- Fullscreen Overlay -->
     <div id="fullscreenOverlay" class="fullscreen-overlay">
         <button class="fullscreen-close" onclick="closeFullscreen()">&times;</button>
@@ -937,7 +1062,8 @@
             modal2: 0,
             modal3: 0,
             modal4: 0,
-            modal5: 0
+            modal5: 0,
+            modal6: 0
         };
 
         let fullscreenState = {
@@ -1069,7 +1195,8 @@
     </script>
 
     <footer>
-        <p>&copy; 2025 Sage Gilbert-Diamond.</p>
+        <p style="margin-bottom: 0.5rem;"><strong>Core PM Competencies:</strong> Product Strategy • Roadmap Planning • User Research • Data Analytics • Stakeholder Management • Technical Communication • Agile/Iterative Development • ROI Analysis</p>
+        <p>&copy; 2025 Sage Gilbert-Diamond. Available for Product Management roles and internships.</p>
     </footer>
 </body>
 </html>
