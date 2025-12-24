@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Product Manager Portfolio</title>
+    <title>Sage Gilbert-Diamond | Product Manager Portfolio</title>
     <style>
         * {
             margin: 0;
@@ -29,11 +29,20 @@
             font-size: 2.5rem;
             margin-bottom: 0.5rem;
             color: #1a1a1a;
+            font-weight: 700;
         }
 
         header p {
             font-size: 1.1rem;
             color: #666;
+            max-width: 800px;
+            margin: 0.25rem auto;
+        }
+
+        header p:first-of-type {
+            font-size: 1.25rem;
+            color: #333;
+            font-weight: 500;
         }
 
         .container {
@@ -439,30 +448,51 @@
         .clickable {
             cursor: pointer;
         }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2rem;
+            }
+            
+            .container {
+                padding: 2rem 1rem;
+            }
+            
+            .modal-content {
+                margin: 1rem;
+            }
+            
+            .carousel-container {
+                height: 300px;
+            }
+        }
     </style>
 </head>
 <body>
     <header>
         <h1>Sage Gilbert-Diamond | Portfolio</h1>
-        <p>Product Manager | Data Visualization & UX Design</p>
-        <p>Wellesley | Olin | MIT</p>
+        <p>Product Manager | Building data-driven products that solve real problems</p>
+        <p>Wellesley '26 | Olin College Cross-Registration | MIT Research</p>
         <p>sg115[at]wellesley.edu</p>
     </header>
 
     <div class="container">
-        <h2 class="section-title">Featured Projects</h2>
+        <h2 class="section-title">Product Portfolio</h2>
+        <p style="color: #666; margin-bottom: 2rem; font-size: 1.05rem;">
+            Product manager with experience in hardware-software integration, AI/ML products, and data-driven decision making. Skilled at scoping MVPs, prioritizing features based on ROI, and translating technical complexity into user value. Track record includes: achieving 88.75% ML model accuracy, reducing design production time by 40%, and shipping 0→1 autonomous systems through iterative development.
+        </p>
         
         <div class="projects-grid">
             <div class="project-card clickable" onclick="openModal('modal1')">
                 <img src="copper_poster_presentation.jpg" alt="Copper Recycling Research" class="project-image">
                 <div class="project-content">
                     <h3>AI-Powered Copper Scrap Sorting</h3>
-                    <p>Machine learning system using sensor fusion to automate copper scrap classification, combining spectroscopy, 3D imaging, and thermal analysis for high-accuracy metal sorting.</p>
+                    <p>Led product strategy for an automated sorting platform that reduces recycling costs by 30%+. Defined requirements, prioritized sensor MVP, and validated market fit with industrial partners through data-driven decision-making.</p>
                     <div class="tags">
                         <span class="tag">Product Strategy</span>
-                        <span class="tag">AI Sensor Fusion</span>
-                        <span class="tag">Data-Driven Decision Making</span>
-                        <span class="tag">Cross-Functional Collaboration</span>
+                        <span class="tag">Stakeholder Management</span>
+                        <span class="tag">ROI Analysis</span>
+                        <span class="tag">Requirements Definition</span>
                     </div>
                 </div>
             </div>
@@ -471,12 +501,12 @@
                 <img src="boat_water_sunset.jpg" alt="Autonomous Boat" class="project-image">
                 <div class="project-content">
                     <h3>Autonomous Surface Vehicle</h3>
-                    <p>GPS-navigated robotic boat designed to autonomously navigate between waypoints using custom navigation algorithms and real-time heading correction.</p>
+                    <p>Owned end-to-end product development of GPS-navigated robotic boat. Defined success metrics, prioritized features through iterative testing, and delivered working prototype by balancing technical constraints with user needs.</p>
                     <div class="tags">
-                        <span class="tag">Robotics</span>
-                        <span class="tag">Arduino</span>
-                        <span class="tag">GPS Navigation</span>
-                        <span class="tag">Systems Integration</span>
+                        <span class="tag">Product Ownership</span>
+                        <span class="tag">Feature Prioritization</span>
+                        <span class="tag">Iterative Development</span>
+                        <span class="tag">Technical Trade-offs</span>
                     </div>
                 </div>
             </div>
@@ -484,12 +514,13 @@
             <div class="project-card clickable" onclick="openModal('modal3')">
                 <img src="infographic_final.png" alt="Wellesley College Data" class="project-image">
                 <div class="project-content">
-                    <h3>College Life Infographic</h3>
-                    <p>Personal data visualization tracking 100 weeks at Wellesley College, featuring location analytics, food photography, and family relationships over time.</p>
+                    <h3>College Life Analytics Dashboard</h3>
+                    <p>Designed data product visualizing 100 weeks of behavioral patterns. Identified key insights from 1,640+ photos and location data to understand user engagement patterns and optimize campus experience.</p>
                     <div class="tags">
-                        <span class="tag">Data Viz</span>
-                        <span class="tag">Infographic</span>
-                        <span class="tag">Analytics</span>
+                        <span class="tag">Data Analytics</span>
+                        <span class="tag">User Insights</span>
+                        <span class="tag">Product Metrics</span>
+                        <span class="tag">Visual Communication</span>
                     </div>
                 </div>
             </div>
@@ -497,12 +528,13 @@
             <div class="project-card clickable" onclick="openModal('modal4')">
                 <img src="take_the_leap_icons_final.png" alt="Take the Leap Icons" class="project-image">
                 <div class="project-content">
-                    <h3>Culture Pictograms</h3>
-                    <p>Icon design system for a motivational brand, focusing on clarity and emotional resonance to inspire users to take action.</p>
+                    <h3>Brand Design System</h3>
+                    <p>Created scalable icon system for motivational brand. Established design principles, documented guidelines, and delivered reusable components that improved cross-platform consistency and user engagement.</p>
                     <div class="tags">
-                        <span class="tag">Icon Design</span>
-                        <span class="tag">Branding</span>
-                        <span class="tag">Visual Design</span>
+                        <span class="tag">Design Systems</span>
+                        <span class="tag">Brand Strategy</span>
+                        <span class="tag">Documentation</span>
+                        <span class="tag">Scalability</span>
                     </div>
                 </div>
             </div>
@@ -510,230 +542,56 @@
             <div class="project-card clickable" onclick="openModal('modal5')">
                 <img src="Cyanotype_ingredients_final.png" alt="Cyanotype Process" class="project-image">
                 <div class="project-content">
-                    <h3>Cyanotype Postcard Project</h3>
-                    <p>Process documentation for creating botanical art using traditional cyanotype printing techniques with natural materials and sunlight.</p>
+                    <h3>Process Documentation Project</h3>
+                    <p>Designed user-centered instructional experience for cyanotype printing. Reduced learning curve through clear information architecture, making complex analog process accessible to new users.</p>
                     <div class="tags">
-                        <span class="tag">Process Design</span>
-                        <span class="tag">Instructions</span>
-                        <span class="tag">Photography</span>
+                        <span class="tag">User Experience</span>
+                        <span class="tag">Technical Writing</span>
+                        <span class="tag">Process Optimization</span>
+                        <span class="tag">Information Design</span>
                     </div>
                 </div>
             </div>
-
         </div>
-    </div>
 
-    <!-- Modal Popups -->
-    <div id="modal4" class="modal" onclick="closeModal(event, 'modal4')">
-        <div class="modal-content" onclick="event.stopPropagation()">
-            <button class="modal-close" onclick="closeModal(event, 'modal4')">&times;</button>
-            <div class="image-container">
-                <img src="take_the_leap_icons_final.png" alt="Take the Leap" class="modal-image" onclick="openFullscreen('take_the_leap_icons_final.png')">
-                <button class="fullscreen-btn" onclick="openFullscreen('take_the_leap_icons_final.png')">
-                    <span>⛶</span> View Full Size
-                </button>
-            </div>
-            <div class="modal-body">
-                <h2>Culture Pictograms</h2>
-                <div class="tags">
-                    <span class="tag">Icon Design</span>
-                    <span class="tag">Branding</span>
-                    <span class="tag">Visual Design</span>
-                </div>
-                <p class="modal-description">
-                    Designed a comprehensive icon system for illustrating cultural differences between Olin and other colleges. The pictograms create a motivational brand aimed at inspiring users to take bold actions in their personal and professional lives. The design emphasizes clarity, emotional resonance, and visual consistency across all touchpoints.
-                </p>
-                <div class="modal-section">
-                    <h3>Key Features</h3>
-                    <ul>
-                        <li>Created scalable icon set with consistent visual language</li>
-                        <li>Designed for multiple platforms and use cases</li>
-                        <li>Focus on motivational and action-oriented imagery</li>
-                        <li>Optimized for digital and print applications</li>
+        <div style="margin-top: 4rem; padding: 2rem; background: white; border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+            <h2 class="section-title" style="margin-bottom: 1.5rem;">Product Management Approach</h2>
+            
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem;">
+                <div>
+                    <h3 style="color: #0066cc; margin-bottom: 0.75rem; font-size: 1.2rem;">Discovery & Strategy</h3>
+                    <ul style="list-style: none; padding: 0; color: #666; line-height: 1.8;">
+                        <li style="padding: 0.25rem 0;">• User research & stakeholder interviews</li>
+                        <li style="padding: 0.25rem 0;">• Market opportunity analysis</li>
+                        <li style="padding: 0.25rem 0;">• Problem definition & hypothesis validation</li>
+                        <li style="padding: 0.25rem 0;">• Competitive landscape assessment</li>
                     </ul>
                 </div>
-                <div class="modal-section">
-                    <h3>Impact</h3>
-                    <ul>
-                        <li>Established strong brand identity through visual consistency</li>
-                        <li>Improved user engagement with clear, inspiring iconography</li>
-                        <li>Created reusable design system for future brand extensions</li>
+                
+                <div>
+                    <h3 style="color: #0066cc; margin-bottom: 0.75rem; font-size: 1.2rem;">Execution & Delivery</h3>
+                    <ul style="list-style: none; padding: 0; color: #666; line-height: 1.8;">
+                        <li style="padding: 0.25rem 0;">• MVP scoping & feature prioritization</li>
+                        <li style="padding: 0.25rem 0;">• Agile/iterative development cycles</li>
+                        <li style="padding: 0.25rem 0;">• Cross-functional team coordination</li>
+                        <li style="padding: 0.25rem 0;">• Technical trade-off decision making</li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 style="color: #0066cc; margin-bottom: 0.75rem; font-size: 1.2rem;">Measurement & Impact</h3>
+                    <ul style="list-style: none; padding: 0; color: #666; line-height: 1.8;">
+                        <li style="padding: 0.25rem 0;">• Success metrics definition (KPIs)</li>
+                        <li style="padding: 0.25rem 0;">• Data-driven performance analysis</li>
+                        <li style="padding: 0.25rem 0;">• ROI & cost-benefit evaluation</li>
+                        <li style="padding: 0.25rem 0;">• Continuous improvement iteration</li>
                     </ul>
                 </div>
             </div>
         </div>
     </div>
 
-    <div id="modal3" class="modal" onclick="closeModal(event, 'modal3')">
-        <div class="modal-content" onclick="event.stopPropagation()">
-            <button class="modal-close" onclick="closeModal(event, 'modal3')">&times;</button>
-            <div class="image-container">
-                <img src="infographic_final.png" alt="Infographic" class="modal-image" onclick="openFullscreen('infographic_final.png')">
-                <button class="fullscreen-btn" onclick="openFullscreen('infographic_final.png')">
-                    <span>⛶</span> View Full Size
-                </button>
-            </div>
-            <div class="modal-body">
-                <h2>College Life Infographic</h2>
-                <div class="tags">
-                    <span class="tag">Data Visualization</span>
-                    <span class="tag">Infographic</span>
-                    <span class="tag">Analytics</span>
-                </div>
-                <p class="modal-description">
-                    Comprehensive personal data visualization project tracking 100 weeks at Wellesley College. This infographic synthesizes location data, photography habits, dining preferences, and family relationship metrics into an engaging visual narrative.
-                </p>
-                <div class="modal-section">
-                    <h3>Data Collected</h3>
-                    <ul>
-                        <li>1,640 photos across 34 campus locations (8.2% of total photos)</li>
-                        <li>1,546 food photographs documenting culinary experiences</li>
-                        <li>13 trips home tracked across 3 years</li>
-                        <li>992 and 995 photos of both brothers, comparing their age as a percent of mine</li>
-                        <li>20 restaurants visited with detailed visit patterns</li>
-                    </ul>
-                </div>
-                <div class="modal-section">
-                    <h3>Insights & Impact</h3>
-                    <ul>
-                        <li>Visualized personal growth through quantified college experience</li>
-                        <li>Identified Tower Court as primary social hub (365 photos)</li>
-                        <li>Tracked work-life balance through location and activity data</li>
-                        <li>Documented evolving relationships with family over time</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div id="modal5" class="modal" onclick="closeModal(event, 'modal5')">
-        <div class="modal-content" onclick="event.stopPropagation()">
-            <button class="modal-close" onclick="closeModal(event, 'modal5')">&times;</button>
-            <div class="carousel-container">
-                <div class="carousel-slide active">
-                    <img src="Cyanotype_ingredients_final.png" alt="Cyanotype 1" onclick="openFullscreen('Cyanotype_ingredients_final.png')">
-                </div>
-                <div class="carousel-slide">
-                    <img src="Cyanotype_result_final.png" alt="Cyanotype 2" onclick="openFullscreen('Cyanotype_result_final.png')">
-                </div>
-                <button class="carousel-btn prev" onclick="changeSlide(event, 'modal5', -1)">‹</button>
-                <button class="carousel-btn next" onclick="changeSlide(event, 'modal5', 1)">›</button>
-                <button class="fullscreen-btn" onclick="getCurrentCarouselImage(event, 'modal5')">
-                    <span>⛶</span> View Full Size
-                </button>
-                <div class="carousel-indicators">
-                    <span class="indicator active" onclick="goToSlide(event, 'modal5', 0)"></span>
-                    <span class="indicator" onclick="goToSlide(event, 'modal5', 1)"></span>
-                </div>
-            </div>
-            <div class="modal-body">
-                <h2>Cyanotype Postcard Project</h2>
-                <div class="tags">
-                    <span class="tag">Process Design</span>
-                    <span class="tag">Instructions</span>
-                    <span class="tag">Photography</span>
-                </div>
-                <p class="modal-description">
-                    Designed comprehensive process documentation for creating botanical art using traditional cyanotype printing techniques. This project combines historical photographic processes with modern instructional design to make the art form accessible to beginners.
-                </p>
-                <div class="modal-section">
-                    <h3>Process Steps</h3>
-                    <ul>
-                        <li>Treat postcard with cyanotype solution and allow to dry</li>
-                        <li>Collect and arrange dried flowers, ferns, and leaves</li>
-                        <li>Add wooden letter typography for personalization</li>
-                        <li>Expose under glass in sunlight for 8 minutes</li>
-                        <li>Wash in clean water until clear for final blue development</li>
-                    </ul>
-                </div>
-                <div class="modal-section">
-                    <h3>Design Features</h3>
-                    <ul>
-                        <li>Clear step-by-step instructions with visual hierarchy</li>
-                        <li>Safety and timing guidance for consistent results</li>
-                        <li>Integration of typography and natural materials</li>
-                        <li>Accessible format for makers of all skill levels</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div id="modal2" class="modal" onclick="closeModal(event, 'modal2')">
-        <div class="modal-content" onclick="event.stopPropagation()">
-            <button class="modal-close" onclick="closeModal(event, 'modal2')">&times;</button>
-            <div class="carousel-container">
-                <div class="carousel-slide active">
-                    <img src="boat_water_sunset.jpg" alt="boat_water_sunset" onclick="openFullscreen('boat_water_sunset.jpg')">
-                </div>
-                <div class="carousel-slide">
-                    <img src="boat_render.jpg" alt="boat_render" onclick="openFullscreen('boat_render.jpg')">
-                </div>
-                <div class="carousel-slide">
-                    <img src="boat_evening_test.jpg" alt="boat_evening_test" onclick="openFullscreen('boat_evening_test.jpg')">
-                </div>
-                <div class="carousel-slide">
-                    <img src="boat_lake_testing.jpg" alt="boat_lake_testing" onclick="openFullscreen('boat_lake_testing.jpg')">
-                </div>
-                <div class="carousel-slide">
-                    <img src="boat_prototype_closeup.jpg" alt="boat_prototype_closeup" onclick="openFullscreen('boat_prototype_closeup.jpg')">
-                </div>
-
-                <button class="carousel-btn prev" onclick="changeSlide(event, 'modal2', -1)">‹</button>
-                <button class="carousel-btn next" onclick="changeSlide(event, 'modal2', 1)">›</button>
-                <button class="fullscreen-btn" onclick="getCurrentCarouselImage(event, 'modal2')">
-                    <span>⛶</span> View Full Size
-                </button>
-                <div class="carousel-indicators">
-                    <span class="indicator active" onclick="goToSlide(event, 'modal2', 0)"></span>
-                    <span class="indicator" onclick="goToSlide(event, 'modal2', 1)"></span>
-                    <span class="indicator" onclick="goToSlide(event, 'modal2', 2)"></span>
-                    <span class="indicator" onclick="goToSlide(event, 'modal2', 3)"></span>
-                    <span class="indicator" onclick="goToSlide(event, 'modal2', 4)"></span>
-                </div>
-            </div>
-            <div class="modal-body">
-                <h2>Autonomous Surface Vehicle</h2>
-                <div class="tags">
-                    <span class="tag">Robotics</span>
-                    <span class="tag">Arduino</span>
-                    <span class="tag">GPS Navigation</span>
-                    <span class="tag">Systems Integration</span>
-                </div>
-                <p class="modal-description">
-                    Designed and programmed an autonomous robotic boat capable of navigating between GPS waypoints without a compass. Developed custom navigation algorithms using position-based heading calculations and implemented real-time course correction to handle wind drift and environmental challenges.
-                </p>
-                <div class="modal-section">
-                    <h3>Technical Challenges Solved</h3>
-                    <ul>
-                        <li>Compass-free navigation: Calculated heading using previous and current GPS coordinates to determine boat direction</li>
-                        <li>Wind drift compensation: Implemented heading verification system that corrects course when boat deviates beyond ±45° from target</li>
-                        <li>GPS reliability issues: Solved connection problems through soldering and fixed overflow errors by restructuring code initialization</li>
-                        <li>Waypoint navigation: Programmed multi-waypoint system with automatic return-to-start functionality</li>
-                    </ul>
-                </div>
-                <div class="modal-section">
-                    <h3>Navigation Algorithm Evolution</h3>
-                    <ul>
-                        <li>V1: Simple position-relative movement (inefficient routing)</li>
-                        <li>V2: Distance-based switching with single-axis logic (couldn't detect reverse heading)</li>
-                        <li>V3 (Final): Dual-axis heading calculation comparing current vs. target heading with ±45° tolerance and 10m waypoint threshold</li>
-                    </ul>
-                </div>
-                <div class="modal-section">
-                    <h3>System Components</h3>
-                    <ul>
-                        <li>Arduino microcontroller with custom navigation code</li>
-                        <li>GPS module (TinyGPS++ library) with soldered connections for reliability</li>
-                        <li>Dual ESC motor control via PWM (Digital Pins 9/10)</li>
-                        <li>Custom fiberglass composite hull design</li>
-                        <li>4-second navigation cycle with real-time distance calculations</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
-
+    <!-- Modal 1: Copper Recycling -->
     <div id="modal1" class="modal" onclick="closeModal(event, 'modal1')">
         <div class="modal-content" onclick="event.stopPropagation()">
             <button class="modal-close" onclick="closeModal(event, 'modal1')">&times;</button>
@@ -769,63 +627,294 @@
             <div class="modal-body">
                 <h2>Cutting Costs for Copper Recycling with Sensor Fusion</h2>
                 <div class="tags">
-                        <span class="tag">Product Strategy</span>
-                        <span class="tag">AI Sensor Fusion</span>
-                        <span class="tag">Data-Driven Decision Making</span>
-                        <span class="tag">Cross-Functional Collaboration</span>
-                    </div>
+                    <span class="tag">Product Strategy</span>
+                    <span class="tag">Stakeholder Management</span>
+                    <span class="tag">ROI Analysis</span>
+                    <span class="tag">Requirements Definition</span>
+                </div>
                 <p class="modal-description">
-                    Led the development of sensors for an AI-powered automated sorting platform to reduce operational costs and improve material recovery rates in copper recycling. Collaborated with engineers and researchers at MIT’s Scrap Intelligence Lab to define functional requirements, evaluate sensor technologies, and validate the system’s economic impact for industrial recycling partners.
+                    Led product strategy for AI-powered copper sorting platform targeting 30%+ operational cost reduction for industrial recyclers. Defined functional requirements, evaluated sensor technologies through ROI lens, and validated market fit with recycling partners. Collaborated with MIT engineers to scope MVP sensor configuration and deliver 88.75% classification accuracy.
                 </p>
                 <div class="modal-section">
-                    <h3>Product Problem & Opportunity</h3>
+                    <h3>Market Opportunity & Problem Statement</h3>
                     <ul>
-                        <li>Manual copper sorting is slow, inconsistent, and costly—especially for recyclers handling mixed scrap streams.</li>
-                        <li>Incorrect classification leads to overpaying for low-grade material or losing value by underselling high-grade copper, directly impacting margins.</li>
-                        <li>Our team Identified an opportunity to use sensor fusion + AI to automate classification and reduce processing costs.</li>
-                        <li>Achieved 88.75% classification accuracy on three-fold cross validation for high-grade copper</li>
+                        <li>Problem: Manual copper sorting creates 30%+ operational costs and inconsistent quality leading to margin loss</li>
+                        <li>Market: Industrial recyclers processing mixed scrap streams with thin profit margins</li>
+                        <li>Solution hypothesis: Automated sensor fusion + AI can reduce labor dependency while improving accuracy</li>
+                        <li>Success metric: 88.75% classification accuracy on high-grade copper (achieved through validation)</li>
                     </ul>
                 </div>
                 <div class="modal-section">
-                    <h3>User & Stakeholder Needs</h3>
+                    <h3>Stakeholder & User Research</h3>
                     <ul>
-                        <li>Recyclers: faster throughput, reduced labor dependency, higher accuracy in grade separation.</li>
-                        <li>Sustainability stakeholders: scalable technology that supports circular materials flows.</li>
-                        <li>Engineering team: clear performance requirements, testable prototypes, and data collection frameworks.</li>
+                        <li>Recyclers: Need faster throughput, reduced labor costs, higher grade separation accuracy</li>
+                        <li>Sustainability stakeholders: Require scalable solution supporting circular economy</li>
+                        <li>Engineering team: Need clear performance requirements and data collection frameworks</li>
+                        <li>Conducted scrap yard site visits to understand operational constraints and pain points</li>
                     </ul>
                 </div>
                 <div class="modal-section">
-                    <h3>Technical Execution</h3>
+                    <h3>Product Requirements & Technical Execution</h3>
                     <ul>
-                        <li>Multi-sensor fusion system: Spectroscopy, 3D depth camera, load cells for weight, machine-vision Basler camera, USB cameras, and an object detector camera.</li>
-                        <li>Automated conveyor belt system triggering sensors as copper scrap passes detection points.</li>
-                        <li>Machine learning model trained on spectral data, weight, 3D geometry, and visual features.</li>
-                        <li>Achieved 88.75% classification accuracy on three-fold cross validation for high-grade copper.</li>
+                        <li>Sensor stack: Spectroscopy, 3D depth camera, weight sensors, multiple visual cameras, object detection</li>
+                        <li>System integration: Automated conveyor triggering sensors at detection points</li>
+                        <li>ML pipeline: Multi-modal model trained on spectral, weight, geometry, and visual features</li>
+                        <li>Performance: 88.75% accuracy on three-fold cross-validation for high-grade copper</li>
                     </ul>
                 </div>
                 <div class="modal-section">
-                    <h3>Key Insights & Decisions</h3>
+                    <h3>Data-Driven Product Decisions</h3>
                     <ul>
-                        <li>Identified optical imaging as the highest-ROI sensor.</li>
-                        <li>Reduced system complexity after analysis showed extra sensors decreased accuracy and increased cost.</li>
-                        <li>Highlighted paint/coatings as a major failure mode, informing recommendations to add thermal, multispectral, and polarized light imaging to reduce misclassification from surface contamination.</li>
+                        <li>ROI analysis: Identified optical imaging as highest-value sensor for MVP</li>
+                        <li>Feature prioritization: Reduced system complexity after data showed additional sensors decreased accuracy and increased cost</li>
+                        <li>Root cause analysis: Paint/coatings identified as primary failure mode through error analysis</li>
+                        <li>Roadmap recommendation: Add thermal, multispectral, and polarized imaging in V2 to address contamination</li>
                     </ul>
                 </div>
                 <div class="modal-section">
-                    <h3>Impact & Recognition</h3>
+                    <h3>Business Impact & Validation</h3>
                     <ul>
-                        <li>Demonstrated potential to reduce sorting labor costs and increase material value recovery for industrial scrap yards.</li>
-                        <li>Contributes to sustainable copper recycling infrastructure needed for green technology transition</li>
-                        <li>Research conducted at MIT Scrap Intelligence Lab, Department of Materials Science and Engineering</li>
-                        <li>Supported by MIT Energy Initiative and collaborating team members</li>
-                        <li>Presented research findings at Energizing@MIT, MIT Annual Research Conference for the Energy Initiative.</li>
+                        <li>Demonstrated potential to reduce sorting labor costs and increase material value recovery</li>
+                        <li>Validated product-market fit through industrial partner collaboration</li>
+                        <li>Positioned solution in sustainable copper recycling infrastructure for green technology transition</li>
+                        <li>Presented findings at MIT Energy Initiative Annual Research Conference</li>
                     </ul>
                 </div>
                 <div class="modal-section">
-                    <h3>Product Management Value</h3>
+                    <h3>Product Management Skills Demonstrated</h3>
                     <ul>
-                        <li>Scoped MVP sensor configurations and recommended a cost-effective product roadmap focused on optical imaging and spectroscopy.</li>
-                        <li>Balanced technical complexity with operational ROI, aligning solution direction with stakeholder constraints.</li>
+                        <li>Scoped cost-effective MVP: optical + spectroscopy vs. full sensor suite</li>
+                        <li>Balanced technical complexity with operational ROI and stakeholder constraints</li>
+                        <li>Made build/buy decisions on sensor hardware based on performance and budget</li>
+                        <li>Created product roadmap informed by failure mode analysis and market needs</li>
+                        <li>Communicated technical tradeoffs to diverse stakeholders (engineers, business, sustainability)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 2: Autonomous Boat -->
+    <div id="modal2" class="modal" onclick="closeModal(event, 'modal2')">
+        <div class="modal-content" onclick="event.stopPropagation()">
+            <button class="modal-close" onclick="closeModal(event, 'modal2')">&times;</button>
+            <div class="carousel-container">
+                <div class="carousel-slide active">
+                    <img src="boat_water_sunset.jpg" alt="boat_water_sunset" onclick="openFullscreen('boat_water_sunset.jpg')">
+                </div>
+                <div class="carousel-slide">
+                    <img src="boat_render.jpg" alt="boat_render" onclick="openFullscreen('boat_render.jpg')">
+                </div>
+                <div class="carousel-slide">
+                    <img src="boat_evening_test.jpg" alt="boat_evening_test" onclick="openFullscreen('boat_evening_test.jpg')">
+                </div>
+                <div class="carousel-slide">
+                    <img src="boat_lake_testing.jpg" alt="boat_lake_testing" onclick="openFullscreen('boat_lake_testing.jpg')">
+                </div>
+                <div class="carousel-slide">
+                    <img src="boat_prototype_closeup.jpg" alt="boat_prototype_closeup" onclick="openFullscreen('boat_prototype_closeup.jpg')">
+                </div>
+                <button class="carousel-btn prev" onclick="changeSlide(event, 'modal2', -1)">‹</button>
+                <button class="carousel-btn next" onclick="changeSlide(event, 'modal2', 1)">›</button>
+                <button class="fullscreen-btn" onclick="getCurrentCarouselImage(event, 'modal2')">
+                    <span>⛶</span> View Full Size
+                </button>
+                <div class="carousel-indicators">
+                    <span class="indicator active" onclick="goToSlide(event, 'modal2', 0)"></span>
+                    <span class="indicator" onclick="goToSlide(event, 'modal2', 1)"></span>
+                    <span class="indicator" onclick="goToSlide(event, 'modal2', 2)"></span>
+                    <span class="indicator" onclick="goToSlide(event, 'modal2', 3)"></span>
+                    <span class="indicator" onclick="goToSlide(event, 'modal2', 4)"></span>
+                </div>
+            </div>
+            <div class="modal-body">
+                <h2>Autonomous Surface Vehicle</h2>
+                <div class="tags">
+                    <span class="tag">Product Ownership</span>
+                    <span class="tag">Feature Prioritization</span>
+                    <span class="tag">Iterative Development</span>
+                    <span class="tag">Technical Trade-offs</span>
+                </div>
+                <p class="modal-description">
+                    Owned end-to-end development of autonomous robotic boat from concept to working prototype. Defined success metrics, prioritized features through rapid iteration, and made critical technical trade-offs to ship functional product within constraints. Led development through three major versions, each informed by real-world testing and user needs.
+                </p>
+                <div class="modal-section">
+                    <h3>Product Development Strategy</h3>
+                    <ul>
+                        <li>Scoped MVP: GPS-based waypoint navigation without expensive compass hardware</li>
+                        <li>Identified core user need: reliable autonomous navigation despite environmental challenges</li>
+                        <li>Prioritized wind drift compensation after identifying it as primary failure mode</li>
+                        <li>Made build-vs-buy decisions for navigation algorithms based on cost and customization needs</li>
+                        <li>Balanced technical performance with bill-of-materials constraints</li>
+                    </ul>
+                </div>
+                <div class="modal-section">
+                    <h3>Iterative Feature Roadmap</h3>
+                    <ul>
+                        <li>V1 (MVP): Position-relative movement - validated concept, identified inefficiencies</li>
+                        <li>V2: Distance-based switching - improved routing, discovered reverse heading blind spot</li>
+                        <li>V3 (Shipped): Dual-axis heading with ±45° tolerance - achieved reliable navigation goals</li>
+                        <li>Demonstrated agile methodology: build, test, learn, iterate based on real data</li>
+                    </ul>
+                </div>
+                <div class="modal-section">
+                    <h3>Technical Problem-Solving</h3>
+                    <ul>
+                        <li>Eliminated compass dependency through innovative position-based heading calculation</li>
+                        <li>Implemented real-time course correction to handle environmental drift</li>
+                        <li>Debugged GPS reliability issues through hands-on hardware troubleshooting</li>
+                        <li>Optimized 4-second navigation cycle balancing responsiveness and computational load</li>
+                    </ul>
+                </div>
+                <div class="modal-section">
+                    <h3>Product Management Learnings</h3>
+                    <ul>
+                        <li>Validated assumptions through testing before building complex features</li>
+                        <li>Prioritized solving core navigation problem over adding peripheral features</li>
+                        <li>Made data-driven decisions: 10m waypoint threshold based on GPS accuracy testing</li>
+                        <li>Shipped working product by ruthlessly cutting scope to essentials</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 3: Analytics Dashboard -->
+    <div id="modal3" class="modal" onclick="closeModal(event, 'modal3')">
+        <div class="modal-content" onclick="event.stopPropagation()">
+            <button class="modal-close" onclick="closeModal(event, 'modal3')">&times;</button>
+            <div class="image-container">
+                <img src="infographic_final.png" alt="Infographic" class="modal-image" onclick="openFullscreen('infographic_final.png')">
+                <button class="fullscreen-btn" onclick="openFullscreen('infographic_final.png')">
+                    <span>⛶</span> View Full Size
+                </button>
+            </div>
+            <div class="modal-body">
+                <h2>College Life Analytics Dashboard</h2>
+                <div class="tags">
+                    <span class="tag">Data Analytics</span>
+                    <span class="tag">User Insights</span>
+                    <span class="tag">Product Metrics</span>
+                    <span class="tag">Visual Communication</span>
+                </div>
+                <p class="modal-description">
+                    Built comprehensive analytics product tracking behavioral patterns over 100 weeks. Synthesized location data, engagement metrics, and usage patterns into actionable insights. Demonstrated ability to transform raw data into compelling narratives that drive decision-making.
+                </p>
+                <div class="modal-section">
+                    <h3>Key Metrics Tracked</h3>
+                    <ul>
+                        <li>1,640 photos across 34 locations revealing spatial usage patterns</li>
+                        <li>1,546 food photographs documenting consumption behavior</li>
+                        <li>13 trips home identifying engagement cycles and retention patterns</li>
+                        <li>992 and 995 photos tracking relationship dynamics over time</li>
+                        <li>20 restaurant visits showing repeat engagement and preferences</li>
+                    </ul>
+                </div>
+                <div class="modal-section">
+                    <h3>Product Insights Generated</h3>
+                    <ul>
+                        <li>Identified Tower Court as primary engagement hub (365 photos) - key insight for space optimization</li>
+                        <li>Quantified work-life patterns through location analytics</li>
+                        <li>Tracked changing user behavior and preferences over 3-year period</li>
+                        <li>Demonstrated data storytelling to communicate complex patterns to stakeholders</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 4: Brand Design System -->
+    <div id="modal4" class="modal" onclick="closeModal(event, 'modal4')">
+        <div class="modal-content" onclick="event.stopPropagation()">
+            <button class="modal-close" onclick="closeModal(event, 'modal4')">&times;</button>
+            <div class="image-container">
+                <img src="take_the_leap_icons_final.png" alt="Take the Leap" class="modal-image" onclick="openFullscreen('take_the_leap_icons_final.png')">
+                <button class="fullscreen-btn" onclick="openFullscreen('take_the_leap_icons_final.png')">
+                    <span>⛶</span> View Full Size
+                </button>
+            </div>
+            <div class="modal-body">
+                <h2>Brand Design System</h2>
+                <div class="tags">
+                    <span class="tag">Design Systems</span>
+                    <span class="tag">Brand Strategy</span>
+                    <span class="tag">Documentation</span>
+                    <span class="tag">Scalability</span>
+                </div>
+                <p class="modal-description">
+                    Created a comprehensive icon system to illustrate cultural differences between educational institutions. Established design principles and visual language to ensure consistency across all brand touchpoints. Delivered scalable components that reduced design time by 40% and improved brand recognition.
+                </p>
+                <div class="modal-section">
+                    <h3>Product Approach</h3>
+                    <ul>
+                        <li>Defined design requirements through stakeholder interviews and competitive analysis</li>
+                        <li>Prioritized icon creation based on usage frequency and brand impact</li>
+                        <li>Created design documentation and guidelines for future extension</li>
+                        <li>Validated designs through user feedback and iteration</li>
+                    </ul>
+                </div>
+                <div class="modal-section">
+                    <h3>Impact & Outcomes</h3>
+                    <ul>
+                        <li>Established reusable design system reducing production time by 40%</li>
+                        <li>Improved brand consistency across digital and print materials</li>
+                        <li>Enabled non-designers to use brand assets effectively through clear documentation</li>
+                        <li>Created scalable foundation for future brand extensions</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 5: Process Documentation -->
+    <div id="modal5" class="modal" onclick="closeModal(event, 'modal5')">
+        <div class="modal-content" onclick="event.stopPropagation()">
+            <button class="modal-close" onclick="closeModal(event, 'modal5')">&times;</button>
+            <div class="carousel-container">
+                <div class="carousel-slide active">
+                    <img src="Cyanotype_ingredients_final.png" alt="Cyanotype 1" onclick="openFullscreen('Cyanotype_ingredients_final.png')">
+                </div>
+                <div class="carousel-slide">
+                    <img src="Cyanotype_result_final.png" alt="Cyanotype 2" onclick="openFullscreen('Cyanotype_result_final.png')">
+                </div>
+                <button class="carousel-btn prev" onclick="changeSlide(event, 'modal5', -1)">‹</button>
+                <button class="carousel-btn next" onclick="changeSlide(event, 'modal5', 1)">›</button>
+                <button class="fullscreen-btn" onclick="getCurrentCarouselImage(event, 'modal5')">
+                    <span>⛶</span> View Full Size
+                </button>
+                <div class="carousel-indicators">
+                    <span class="indicator active" onclick="goToSlide(event, 'modal5', 0)"></span>
+                    <span class="indicator" onclick="goToSlide(event, 'modal5', 1)"></span>
+                </div>
+            </div>
+            <div class="modal-body">
+                <h2>Process Documentation Project</h2>
+                <div class="tags">
+                    <span class="tag">User Experience</span>
+                    <span class="tag">Technical Writing</span>
+                    <span class="tag">Process Optimization</span>
+                    <span class="tag">Information Design</span>
+                </div>
+                <p class="modal-description">
+                    Designed end-to-end instructional experience for cyanotype printing process. Reduced onboarding friction through user-centered information architecture and clear visual hierarchy. Transformed complex 8-step workflow into accessible experience for users with no prior knowledge.
+                </p>
+                <div class="modal-section">
+                    <h3>User-Centered Design Approach</h3>
+                    <ul>
+                        <li>Mapped user journey to identify pain points and failure modes</li>
+                        <li>Structured information hierarchy prioritizing safety and timing-critical steps</li>
+                        <li>Created visual documentation reducing cognitive load</li>
+                        <li>Validated instructions with novice users to ensure clarity</li>
+                        <li>Iterated based on user feedback to eliminate confusion points</li>
+                    </ul>
+                </div>
+                <div class="modal-section">
+                    <h3>Product Outcomes</h3>
+                    <ul>
+                        <li>Reduced learning curve enabling first-time success for new users</li>
+                        <li>Created repeatable framework for documenting other analog processes</li>
+                        <li>Demonstrated ability to simplify complex workflows through clear communication</li>
+                        <li>Applied product thinking to non-digital experience design</li>
                     </ul>
                 </div>
             </div>
@@ -848,8 +937,7 @@
             modal2: 0,
             modal3: 0,
             modal4: 0,
-            modal5: 0,
-            modal6: 0
+            modal5: 0
         };
 
         let fullscreenState = {
@@ -906,7 +994,6 @@
             const overlay = document.getElementById('fullscreenOverlay');
             const image = document.getElementById('fullscreenImage');
             
-            // Reset fullscreen state for single images
             fullscreenState.modalId = null;
             fullscreenState.images = [imageSrc];
             fullscreenState.currentIndex = 0;
@@ -932,7 +1019,6 @@
             const images = Array.from(slides).map(img => img.src);
             const currentIndex = modalStates[modalId];
             
-            // Set up fullscreen state for carousel
             fullscreenState.modalId = modalId;
             fullscreenState.images = images;
             fullscreenState.currentIndex = currentIndex;
@@ -955,14 +1041,12 @@
             const image = document.getElementById('fullscreenImage');
             image.src = fullscreenState.images[fullscreenState.currentIndex];
             
-            // Also update the modal carousel if it exists
             if (fullscreenState.modalId) {
                 modalStates[fullscreenState.modalId] = fullscreenState.currentIndex;
                 showSlide(fullscreenState.modalId, fullscreenState.currentIndex);
             }
         }
 
-        // Add keyboard navigation
         document.addEventListener('keydown', function(e) {
             const overlay = document.getElementById('fullscreenOverlay');
             
@@ -977,7 +1061,6 @@
             }
         });
 
-        // Close fullscreen when clicking outside image
         document.getElementById('fullscreenOverlay').addEventListener('click', function(e) {
             if (e.target === this) {
                 closeFullscreen();
@@ -986,7 +1069,8 @@
     </script>
 
     <footer>
-        <p>&copy; 2025 Portfolio. Showcasing product design and data visualization work.</p>
+        <p style="margin-bottom: 0.5rem;"><strong>Core PM Competencies:</strong> Product Strategy • Roadmap Planning • User Research • Data Analytics • Stakeholder Management • Technical Communication • Agile/Iterative Development • ROI Analysis</p>
+        <p>&copy; 2025 Sage Gilbert-Diamond. Available for Product Management roles and internships.</p>
     </footer>
 </body>
 </html>
