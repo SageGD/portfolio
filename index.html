@@ -545,6 +545,12 @@
         <p style="color: #666; margin-bottom: 2rem; font-size: 1.05rem;">
             Product manager with experience in hardware-software integration, AI/ML products, and data-driven decision making. Skilled at scoping MVPs, prioritizing features based on ROI, and translating technical complexity into user value. Track record includes: achieving 88.75% ML model accuracy, reducing design production time by 40%, and shipping 0→1 autonomous systems through iterative development.
         </p>
+
+        <div style="background: #f8f9fa; border-left: 4px solid #0066cc; padding: 1rem 1.5rem; margin-bottom: 2rem; border-radius: 4px;">
+            <p style="margin: 0; color: #555; font-size: 0.95rem;">
+                <strong>💡 Tip:</strong> Click on any project card below to view detailed case studies, including problem statements, methodologies, and outcomes.
+            </p>
+        </div>
         
         <div class="projects-grid">
             <div class="project-card clickable" onclick="openModal('modal1')">
@@ -1306,6 +1312,45 @@
             modalStates[modalId] = 0;
             showSlide(modalId, 0);
         }
+
+        function createRipple(event) {
+            const card = event.currentTarget;
+            const ripple = document.createElement('span');
+            const rect = card.getBoundingClientRect();
+            const size = Math.max(rect.width, rect.height);
+            const x = event.clientX - rect.left - size / 2;
+            const y = event.clientY - rect.top - size / 2;
+
+            ripple.style.width = ripple.style.height = size + 'px';
+            ripple.style.left = x + 'px';
+            ripple.style.top = y + 'px';
+            ripple.classList.add('ripple');
+
+            card.appendChild(ripple);
+
+            setTimeout(() => {
+                ripple.remove();
+            }, 600);
+        }
+
+        // Add ripple effect to all project cards
+        document.addEventListener('DOMContentLoaded', function() {
+            const cards = document.querySelectorAll('.project-card');
+            cards.forEach(card => {
+                card.addEventListener('click', createRipple);
+                
+                // Add keyboard support
+                card.setAttribute('tabindex', '0');
+                card.addEventListener('keypress', function(e) {
+                    if (e.key === 'Enter' || e.key === ' ') {
+                        e.preventDefault();
+                        createRipple(e);
+                        const modalId = card.getAttribute('onclick').match(/'([^']+)'/)[1];
+                        openModal(modalId);
+                    }
+                });
+            });
+        });
 
         function closeModal(event, modalId) {
             event.stopPropagation();
