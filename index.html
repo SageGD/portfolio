@@ -64,11 +64,37 @@
             overflow: hidden;
             box-shadow: 0 2px 8px rgba(0,0,0,0.1);
             transition: transform 0.3s ease, box-shadow 0.3s ease;
+            cursor: pointer;
+            position: relative;
+        }
+
+        .project-card::after {
+            content: "Click to view details →";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: linear-gradient(to top, rgba(0, 102, 204, 0.95), transparent);
+            color: white;
+            padding: 1.5rem 1.5rem 1rem;
+            font-size: 0.9rem;
+            font-weight: 500;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            pointer-events: none;
         }
 
         .project-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 8px 24px rgba(0,0,0,0.2);
+        }
+
+        .project-card:hover::after {
+            opacity: 1;
+        }
+
+        .project-card:active {
             transform: translateY(-4px);
-            box-shadow: 0 4px 16px rgba(0,0,0,0.15);
         }
 
         .project-image {
@@ -76,6 +102,11 @@
             height: 250px;
             object-fit: cover;
             border-bottom: 1px solid #e0e0e0;
+            transition: transform 0.3s ease;
+        }
+
+        .project-card:hover .project-image {
+            transform: scale(1.05);
         }
 
         .project-content {
@@ -86,6 +117,11 @@
             font-size: 1.4rem;
             margin-bottom: 0.75rem;
             color: #1a1a1a;
+            transition: color 0.3s ease;
+        }
+
+        .project-card:hover .project-content h3 {
+            color: #0066cc;
         }
 
         .project-content p {
@@ -107,6 +143,12 @@
             border-radius: 12px;
             font-size: 0.85rem;
             font-weight: 500;
+            transition: all 0.3s ease;
+        }
+
+        .project-card:hover .tag {
+            background: #0066cc;
+            color: white;
         }
 
         .section-title {
@@ -447,6 +489,28 @@
 
         .clickable {
             cursor: pointer;
+            user-select: none;
+        }
+
+        .clickable:focus {
+            outline: 3px solid #0066cc;
+            outline-offset: 2px;
+        }
+
+        .ripple {
+            position: absolute;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.6);
+            transform: scale(0);
+            animation: ripple-animation 0.6s ease-out;
+            pointer-events: none;
+        }
+
+        @keyframes ripple-animation {
+            to {
+                transform: scale(4);
+                opacity: 0;
+            }
         }
 
         @media (max-width: 768px) {
