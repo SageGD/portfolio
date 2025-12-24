@@ -472,7 +472,7 @@
     <header>
         <h1>Sage Gilbert-Diamond | Portfolio</h1>
         <p>Product Manager | Building data-driven products that solve real problems</p>
-        <p>Wellesley '26 | Olin College Cross-Registration | MIT Research</p>
+        <p>Wellesley '26 Physics B.A. | Olin '27 Engineering B.S. | MIT Research</p>
         <p>sg115[at]wellesley.edu</p>
     </header>
 
@@ -1100,7 +1100,7 @@
             const image = document.getElementById('fullscreenImage');
             
             overlay.classList.add('has-carousel');
-            image.src = images[currentIndex];
+            image.src = images[currentIndex];<span class="indicator" onclick="goToSlide(event, 'modal6', 2)"></span>
             overlay.classList.add('active');
             document.body.style.overflow = 'hidden';
         }
