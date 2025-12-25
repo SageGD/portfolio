@@ -1114,15 +1114,18 @@
                     <img src="Sample_holder.jpeg" alt="Nanoparticle Sample Holder" onclick="openFullscreen('Sample_holder.jpeg')">
                 </div>
                 <div class="carousel-slide">
-                    <div class="video-wrapper" onclick="playVideo(event, 'modal4-video')">
-                        <video id="modal4-video" class="carousel-video" poster="animation_thumbnail.png">
-                            <source src="animation.mp4" type="video/mp4">
-                        </video>
-                        <div class="video-play-overlay">
-                            <div class="play-button">▶</div>
-                        </div>
-                    </div>
+                    <video
+                        id="modal4-video"
+                        class="carousel-video"
+                        controls
+                        poster="animation_thumbnail.png"
+                        playsinline
+                        style="max-width:100%; height:auto;"
+                    >
+                        <source src="animation.mp4" type="video/mp4">
+                    </video>
                 </div>
+
                 <button class="carousel-btn prev" onclick="changeSlide(event, 'modal4', -1)">‹</button>
                 <button class="carousel-btn next" onclick="changeSlide(event, 'modal4', 1)">›</button>
                 <button class="fullscreen-btn" onclick="getCurrentCarouselImage(event, 'modal4')">
