@@ -580,7 +580,7 @@
             </div>
 
             <div class="project-card clickable" onclick="openModal('modal4')">
-                <img src="lodestone_lab.jpg" alt="Lodestone Biomedical" class="project-image">
+                <img src="Error_visualization.png" alt="Lodestone Biomedical" class="project-image">
                 <div class="project-content">
                     <h3>Medical Device R&D Internship</h3>
                     <p>Product intern at early-stage biomedical startup developing magnetic nanoparticle detection technology. Led multiplexing proof-of-concept, coordinated cross-functional experiment schedules, and created investor communications.</p>
@@ -1099,13 +1099,20 @@
             <button class="modal-close" onclick="closeModal(event, 'modal4')">&times;</button>
             <div class="carousel-container">
                 <div class="carousel-slide active">
-                    <img src="lodestone_lab.jpg" alt="Lab Work" onclick="openFullscreen('lodestone_lab.jpg')">
+                    <img src="Error_visualization.png" alt="Error Visualization" onclick="openFullscreen('Error_visualization.png')">
                 </div>
                 <div class="carousel-slide">
-                    <img src="lodestone_multiplexing.jpg" alt="Multiplexing Experiment" onclick="openFullscreen('lodestone_multiplexing.jpg')">
+                    <img src="Sample_holder.jpeg" alt="Nanoparticle Sample Holder" onclick="openFullscreen('Sample_holder.jpeg')">
                 </div>
                 <div class="carousel-slide">
-                    <img src="lodestone_animation.jpg" alt="Animation Video" onclick="openFullscreen('lodestone_animation.jpg')">
+                    <div class="video-wrapper" onclick="playVideo(event, 'modal4-video')">
+                        <video id="modal4-video" class="carousel-video" poster="animation_thumbnail.png">
+                            <source src="animation.mp4" type="video/mp4">
+                        </video>
+                        <div class="video-play-overlay">
+                            <div class="play-button">▶</div>
+                        </div>
+                    </div>
                 </div>
                 <button class="carousel-btn prev" onclick="changeSlide(event, 'modal4', -1)">‹</button>
                 <button class="carousel-btn next" onclick="changeSlide(event, 'modal4', 1)">›</button>
