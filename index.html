@@ -1124,8 +1124,15 @@
                     >
                         <source src="animation.mp4" type="video/mp4">
                     </video>
+                
+                    <button
+                        class="fullscreen-btn"
+                        onclick="openFullscreen('animation.mp4', 'video')"
+                        style="margin-top:8px;"
+                    >
+                        ⛶ View Full Size
+                    </button>
                 </div>
-
                 <button class="carousel-btn prev" onclick="changeSlide(event, 'modal4', -1)">‹</button>
                 <button class="carousel-btn next" onclick="changeSlide(event, 'modal4', 1)">›</button>
                 <button class="fullscreen-btn" onclick="getCurrentCarouselImage(event, 'modal4')">
@@ -1338,21 +1345,38 @@
                 indicator.classList.toggle('active', i === index);
             });
         }
-
-        function openFullscreen(imageSrc) {
+        
+        function openFullscreen(src, type = "image") {
             event.stopPropagation();
+        
             const overlay = document.getElementById('fullscreenOverlay');
             const image = document.getElementById('fullscreenImage');
-            
+            const video = document.getElementById('fullscreenVideo');
+        
             fullscreenState.modalId = null;
-            fullscreenState.images = [imageSrc];
             fullscreenState.currentIndex = 0;
-            
+        
             overlay.classList.remove('has-carousel');
-            image.src = imageSrc;
+        
+            // Hide both by default
+            image.style.display = "none";
+            video.style.display = "none";
+        
+            if (type === "video") {
+                video.src = src;
+                video.style.display = "block";
+                video.play();
+                fullscreenState.images = [src];
+            } else {
+                image.src = src;
+                image.style.display = "block";
+                fullscreenState.images = [src];
+            }
+        
             overlay.classList.add('active');
             document.body.style.overflow = 'hidden';
         }
+
 
         function closeFullscreen() {
             const overlay = document.getElementById('fullscreenOverlay');
