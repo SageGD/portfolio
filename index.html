@@ -849,6 +849,152 @@
         </div>
     </div>
 
+    <!-- Modal 3: Death Doula Research -->
+    <div id="modal3" class="modal" onclick="closeModal(event, 'modal3')">
+        <div class="modal-content" onclick="event.stopPropagation()">
+            <button class="modal-close" onclick="closeModal(event, 'modal3')">&times;</button>
+            <div class="carousel-container">
+                <div class="carousel-slide active">
+                    <img src="death_doula_personas.jpg" alt="Personas" onclick="openFullscreen('death_doula_personas.jpg')">
+                </div>
+                <div class="carousel-slide">
+                    <img src="death_bnb_concept.jpg" alt="Death BnB Concept" onclick="openFullscreen('death_bnb_concept.jpg')">
+                </div>
+                <div class="carousel-slide">
+                    <img src="doula_codesign.jpg" alt="Co-Design Session" onclick="openFullscreen('doula_codesign.jpg')">
+                </div>
+                <button class="carousel-btn prev" onclick="changeSlide(event, 'modal3', -1)">‹</button>
+                <button class="carousel-btn next" onclick="changeSlide(event, 'modal3', 1)">›</button>
+                <button class="fullscreen-btn" onclick="getCurrentCarouselImage(event, 'modal3')">
+                    <span>⛶</span> View Full Size
+                </button>
+                <div class="carousel-indicators">
+                    <span class="indicator active" onclick="goToSlide(event, 'modal3', 0)"></span>
+                    <span class="indicator" onclick="goToSlide(event, 'modal3', 1)"></span>
+                    <span class="indicator" onclick="goToSlide(event, 'modal3', 2)"></span>
+                </div>
+            </div>
+            <div class="modal-body">
+                <h2>End-of-Life Care Innovation: Death BnB</h2>
+                <div class="tags">
+                    <span class="tag">User Research</span>
+                    <span class="tag">Persona Development</span>
+                    <span class="tag">Co-Design</span>
+                    <span class="tag">Service Design</span>
+                </div>
+                <p class="modal-description">
+                    Led 3-month human-centered design project addressing community gaps in US end-of-life care. Conducted 10+ stakeholder interviews with death doulas and hospice professionals, synthesized findings into 3 user personas, and co-designed Death BnB—a nonprofit lodge network creating community-centered deathcare. Demonstrated full product discovery process from research through validated concept.
+                </p>
+                <div class="modal-section">
+                    <h3>Problem Space & Market Opportunity</h3>
+                    <ul>
+                        <li>Problem: US death culture lacks community support systems present in global deathcare traditions</li>
+                        <li>User pain point: Doulas experience burnout from emotional burden and family conflict management</li>
+                        <li>Market gap: No community-focused alternative to medicalized hospice model</li>
+                        <li>Opportunity: 15-year-old death doula movement seeking to "de-corporatize" end-of-life care</li>
+                        <li>Key tension: Doulas want federal legitimization but fear losing professional autonomy</li>
+                    </ul>
+                </div>
+                <div class="modal-section">
+                    <h3>User Research & Discovery Process</h3>
+                    <ul>
+                        <li>Conducted 10 stakeholder interactions: 4 in-person, 6 remote interviews</li>
+                        <li>User groups: Death doulas, hospice case managers, palliative care nurses, grief therapists</li>
+                        <li>Research methods: Semi-structured interviews, observational shadowing, materials analysis</li>
+                        <li>Created 10 individual people portraits with quotes, photos, personality analysis</li>
+                        <li>Used OCEAN personality framework to identify patterns across doulas</li>
+                        <li>Key finding: Uniformly high openness and conscientiousness due to entrepreneurial career shifts</li>
+                    </ul>
+                </div>
+                <div class="modal-section">
+                    <h3>Data Synthesis & Persona Development</h3>
+                    <ul>
+                        <li>Synthesized research into 3 distinct personas representing user motivations:</li>
+                        <li><strong>Aiding Alice:</strong> High-volume healthcare worker (30+ clients/week) motivated by helping many people, struggles with burnout and lack of peer support</li>
+                        <li><strong>Visionary Vanessa:</strong> Focused on systemic change in US death culture, politically engaged, values community-oriented care models</li>
+                        <li><strong>Mending Mary:</strong> Personal loss survivor using doulaing to heal, runs support groups, destigmatizes death for broader community</li>
+                        <li>Mapped personas on 2x2 frameworks: spiritual-political vs. frustrated-content showed strong segmentation</li>
+                        <li>Validated segmentation: "Doula as service" vs. "Teacher" vs. "Social impact" categories</li>
+                    </ul>
+                </div>
+                <div class="modal-section">
+                    <h3>Key Insights from Research</h3>
+                    <ul>
+                        <li><strong>Insight 1:</strong> Doulas venerate global deathcare traditions that provide community at EOL (neighbors, children involved in care)</li>
+                        <li><strong>Insight 2:</strong> Most doula stress comes from family conflict, not the dying client—families are underprepared and emotional</li>
+                        <li><strong>Insight 3:</strong> Doulas struggle to distinguish helping themselves from helping clients—they view both as inseparable</li>
+                        <li><strong>Insight 4:</strong> Tension between accessibility (short certification programs) and legitimacy (inadequate training)</li>
+                        <li><strong>Insight 5:</strong> Many doulas came from corporate backgrounds in their 50s, aligning with narrative identity re-examination theory</li>
+                    </ul>
+                </div>
+                <div class="modal-section">
+                    <h3>Ideation & Co-Design Process</h3>
+                    <ul>
+                        <li>Generated 100+ ideas plotted on "fanciful horizon" boldness framework</li>
+                        <li>Conducted 5 co-design sessions with doulas including 2 new participants</li>
+                        <li>Iterated based on feedback: Initial "death vacation" concept pivoted to address urgent housing need</li>
+                        <li>Key learning: Boldness comes from cultural shifts, not radical technology (e.g., "lethal energy" idea was actually low-impact)</li>
+                        <li>Validated assumptions with users throughout ideation process</li>
+                        <li>Converged on 9 best ideas, refined to 3 final concepts for presentation</li>
+                    </ul>
+                </div>
+                <div class="modal-section">
+                    <h3>Solution: Death BnB Value Proposition</h3>
+                    <ul>
+                        <li><strong>What it is:</strong> Nonprofit network of lodges providing community-centered end-of-life care</li>
+                        <li><strong>Different from hospice:</strong> Focuses on quality of life and community vs. medical care and life extension</li>
+                        <li><strong>For doulas:</strong> Creates professional network for experience-sharing and reduces isolation</li>
+                        <li><strong>For clients:</strong> Scenic locations with peers, meaningful activities, and holistic support</li>
+                        <li><strong>For families:</strong> Reduces trauma of home death, provides legal safe house for homeless/underserved</li>
+                        <li>Funding model: 501(c)(3) via donations and service charges to maintain autonomy from government restrictions</li>
+                    </ul>
+                </div>
+                <div class="modal-section">
+                    <h3>Additional Concepts Developed</h3>
+                    <ul>
+                        <li><strong>Doula Finder App:</strong> Marketplace filtering by services (including music performers for EOL), access to global deathcare practices</li>
+                        <li><strong>Doula Scouts Badge Program:</strong> Age-appropriate deathcare education in existing Boy/Girl Scouts, focusing on physical truths (not spiritual)</li>
+                        <li>All concepts validated through co-design to ensure alignment with doula values and client needs</li>
+                    </ul>
+                </div>
+                <div class="modal-section">
+                    <h3>Validation & Iteration</h3>
+                    <ul>
+                        <li>Death BnB initially positioned as "bucket list" experience—pivoted after doula feedback</li>
+                        <li>Doulas identified urgent need: Housing for clients dying without hospice access or experiencing homelessness</li>
+                        <li>Added residency program for doulas to build community and gain experience</li>
+                        <li>Maintained nonprofit structure after feedback about government funding risks to autonomy</li>
+                        <li>Addressed concern that idea only helped clients by leveraging Insight 3: helping client = helping doula</li>
+                    </ul>
+                </div>
+                <div class="modal-section">
+                    <h3>Product Management Skills Demonstrated</h3>
+                    <ul>
+                        <li>User research: Conducted interviews, synthesized qualitative data, identified patterns</li>
+                        <li>Persona development: Created research-backed user archetypes to guide design decisions</li>
+                        <li>Problem framing: Identified root causes beyond surface symptoms (burnout → lack of community)</li>
+                        <li>Iterative design: Rapidly incorporated feedback, pivoted concepts based on user validation</li>
+                        <li>Stakeholder management: Balanced needs across doulas, clients, families, regulatory environment</li>
+                        <li>Service design: Created multi-sided platform addressing ecosystem of stakeholders</li>
+                        <li>Value proposition: Articulated clear benefits for each user segment</li>
+                    </ul>
+                </div>
+                <div class="modal-section">
+                    <h3>Impact & Outcomes</h3>
+                    <ul>
+                        <li>Validated concept addressing critical gap in US healthcare system</li>
+                        <li>Designed solution serving all three personas with distinct value props:</li>
+                        <li>→ Aiding Alice: Peer network and emotional support to reduce burnout</li>
+                        <li>→ Visionary Vanessa: Vehicle for reshaping US death culture</li>
+                        <li>→ Mending Mary: Community-building platform for destigmatizing death</li>
+                        <li>Created compelling vision of transformed death culture in US</li>
+                        <li>Developed replicable human-centered design methodology for sensitive topics</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- Modal 5: Muon Detector -->
     <div id="modal5" class="modal" onclick="closeModal(event, 'modal5')">
         <div class="modal-content" onclick="event.stopPropagation()">
