@@ -607,6 +607,19 @@
                 </div>
             </div>
         </div>
+        <div class="project-card clickable" onclick="openModal('modal6')">
+            <img src="oooze_chocolate_chunk.png" alt="Oooze Cookies" class="project-image">
+            <div class="project-content">
+                <h3>Oooze Cookies: Campus Food Startup</h3>
+                <p>Launching a cookie business at Wellesley College through comprehensive customer discovery, product testing, and operational planning. Conducted surveys with 50+ students, iterated on recipes based on family feedback, and designed brand identity through poster testing.</p>
+                <div class="tags">
+                    <span class="tag">Customer Discovery</span>
+                    <span class="tag">Market Research</span>
+                    <span class="tag">Operations Planning</span>
+                    <span class="tag">Brand Development</span>
+                </div>
+            </div>
+        </div>
 
         <div style="margin-top: 4rem; padding: 2rem; background: white; border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
             <h2 class="section-title" style="margin-bottom: 1.5rem;">About Me</h2>
@@ -1280,6 +1293,128 @@
         </div>
     </div>
 
+    <!-- Modal 6: Oooze Cookies -->
+    <div id="modal6" class="modal" onclick="closeModal(event, 'modal6')">
+        <div class="modal-content" onclick="event.stopPropagation()">
+            <button class="modal-close" onclick="closeModal(event, 'modal6')">&times;</button>
+            <div class="carousel-container">
+                <div class="carousel-slide active">
+                    <img src="oooze_chocolate_chunk.png" alt="Chocolate Chunk Cookie" onclick="openFullscreen('oooze_chocolate_chunk.png')">
+                </div>
+                <div class="carousel-slide">
+                    <img src="oooze_logo.png" alt="Brand Identity" onclick="openFullscreen('oooze_logo.png')">
+                </div>
+                <div class="carousel-slide">
+                    <img src="oooze_gochujang_caramel.png" alt="Gochujang Caramel Cookie" onclick="openFullscreen('oooze_gochujang_caramel.png')">
+                </div>
+                <div class="carousel-slide">
+                    <img src="oooze_tiramisu.png" alt="Tiramisu Cookie" onclick="openFullscreen('oooze_tiramisu.png')">
+                </div>
+                <button class="carousel-btn prev" onclick="changeSlide(event, 'modal6', -1)">‹</button>
+                <button class="carousel-btn next" onclick="changeSlide(event, 'modal6', 1)">›</button>
+                <button class="fullscreen-btn" onclick="getCurrentCarouselImage(event, 'modal6')">
+                    <span>⛶</span> View Full Size
+                </button>
+                <div class="carousel-indicators">
+                    <span class="indicator active" onclick="goToSlide(event, 'modal6', 0)"></span>
+                    <span class="indicator" onclick="goToSlide(event, 'modal6', 1)"></span>
+                    <span class="indicator" onclick="goToSlide(event, 'modal6', 2)"></span>
+                    <span class="indicator" onclick="goToSlide(event, 'modal6', 3)"></span>
+                </div>
+            </div>
+            <div class="modal-body">
+                <h2>Oooze Cookies: Building a Campus Food Business from Scratch</h2>
+                <div class="tags">
+                    <span class="tag">Customer Discovery</span>
+                    <span class="tag">Market Research</span>
+                    <span class="tag">Operations Planning</span>
+                    <span class="tag">Brand Development</span>
+                </div>
+                <p class="modal-description">
+                    Launching a cookie delivery business at Wellesley College for Spring 2026. Conducted end-to-end product development from recipe iteration and brand identity testing to customer surveys and operational logistics planning. Applied lean startup methodology: testing assumptions through real customer feedback before investing in full production.
+                </p>
+                <div class="modal-section">
+                    <h3>Market Opportunity & Problem Statement</h3>
+                    <ul>
+                        <li>Problem: Limited late-night dessert options on Wellesley campus, especially unique flavors beyond standard chocolate chip</li>
+                        <li>Target market: College students seeking convenient, high-quality treats during study sessions and social gatherings</li>
+                        <li>Differentiation: Creative flavor profiles (Gochujang Caramel, Tiramisu, Chocolate Chunk) with strong visual brand identity</li>
+                        <li>Success metrics: Positive survey feedback on pricing, flavors, and delivery model; validated demand through pre-orders</li>
+                    </ul>
+                </div>
+                <div class="modal-section">
+                    <h3>Customer Discovery & Validation</h3>
+                    <ul>
+                        <li>Conducted anonymous survey of Wellesley students gathering data on: pricing preferences, pre-order vs. first-come-first-serve pickup, flavor profiles, purchase frequency, and delivery timing preferences</li>
+                        <li>Recipe testing with family: Brought multiple cookie variations to family gathering and observed which recipes were eaten fastest—using behavioral data over stated preferences</li>
+                        <li>Brand identity testing: Showed cookie posters (Chocolate Chunk, Gochujang Caramel, Tiramisu) to friends and family, collecting first impressions to iterate on visual design and strengthen brand recognition</li>
+                        <li>Key insight: Students preferred pre-order model for planning, but also valued spontaneous availability—suggesting hybrid approach</li>
+                    </ul>
+                </div>
+                <div class="modal-section">
+                    <h3>Product Development & Iteration</h3>
+                    <ul>
+                        <li>Recipe experimentation: Tested multiple variations of each flavor to optimize taste, texture, and "ooze" factor</li>
+                        <li>Family feedback loop: Used holiday gathering as live product testing—fastest disappearing cookies = strongest product-market fit</li>
+                        <li>Flavor innovation: Developed unique profiles (Korean-inspired Gochujang Caramel, Italian Tiramisu) to differentiate from competitors</li>
+                        <li>Size optimization: Researching cookie dimensions that balance customer appeal with profit margins and production efficiency</li>
+                    </ul>
+                </div>
+                <div class="modal-section">
+                    <h3>Brand Identity & Marketing</h3>
+                    <ul>
+                        <li>Visual identity: Created space-themed poster designs featuring astronaut and cookie planets to stand out in campus environment</li>
+                        <li>User testing: Gathered first impressions on poster designs to identify which elements resonated and what needed refinement</li>
+                        <li>Brand positioning: "It's your world. Make it sweeter" tagline emphasizing personalization and joy</li>
+                        <li>Social proof strategy: Planning @oooze.cookies Instagram presence for pre-launch buzz and customer engagement</li>
+                    </ul>
+                </div>
+                <div class="modal-section">
+                    <h3>Operations & Logistics Planning</h3>
+                    <ul>
+                        <li>Regulatory research: Investigated food preparation safety guidelines and requirements for operating from home kitchen</li>
+                        <li>Supply chain: Planning ingredient purchasing schedule to maintain freshness while minimizing waste</li>
+                        <li>Production timeline: Mapping out when to prepare dough, bake batches, and coordinate delivery windows with customer availability</li>
+                        <li>Delivery model: Evaluating pre-order system vs. first-come-first-serve based on survey data and operational constraints</li>
+                        <li>Capacity planning: Determining realistic order volume per week based on kitchen capacity and academic workload</li>
+                    </ul>
+                </div>
+                <div class="modal-section">
+                    <h3>Pricing & Business Model</h3>
+                    <ul>
+                        <li>Cost analysis: Calculating ingredient costs, labor time, and overhead to establish baseline pricing</li>
+                        <li>Competitive research: Analyzing pricing of other campus food options and local bakeries</li>
+                        <li>Customer willingness-to-pay: Survey data on price sensitivity to find optimal price point</li>
+                        <li>Profit margin optimization: Balancing cookie size, ingredient quality, and pricing to ensure sustainable business model</li>
+                    </ul>
+                </div>
+                <div class="modal-section">
+                    <h3>Product Management Skills Demonstrated</h3>
+                    <ul>
+                        <li>Customer discovery: Designed and executed surveys to validate demand and gather product requirements</li>
+                        <li>MVP thinking: Testing recipes and brand with small audience before full launch</li>
+                        <li>Data-driven iteration: Using behavioral observation (which cookies disappeared fastest) over self-reported preferences</li>
+                        <li>Operations planning: End-to-end logistics from ingredient sourcing to delivery coordination</li>
+                        <li>Brand development: Iterating on visual identity through user feedback</li>
+                        <li>Market research: Analyzing competitive landscape and identifying differentiation opportunities</li>
+                        <li>Risk mitigation: Researching food safety regulations before launching to avoid compliance issues</li>
+                    </ul>
+                </div>
+                <div class="modal-section">
+                    <h3>Next Steps & Roadmap</h3>
+                    <ul>
+                        <li>Finalize recipes based on family testing results and freeze standardized dough portions</li>
+                        <li>Launch Instagram account with poster designs to build pre-launch interest</li>
+                        <li>Set up pre-order system (Google Form or similar) with delivery schedule</li>
+                        <li>Conduct soft launch with small batch to validate production process and gather initial customer feedback</li>
+                        <li>Iterate on delivery model, pricing, and flavors based on first-week data</li>
+                        <li>Scale operations based on demand while maintaining quality standards</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- Fullscreen Overlay -->
     <div id="fullscreenOverlay" class="fullscreen-overlay">
         <button class="fullscreen-close" onclick="closeFullscreen()">&times;</button>
@@ -1296,7 +1431,8 @@
             modal2: 0,
             modal3: 0,
             modal4: 0,
-            modal5: 0
+            modal5: 0,
+            modal6: 0
         };
 
         let fullscreenState = {
