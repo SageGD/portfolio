@@ -564,24 +564,8 @@
                     </div>
                 </div>
             </div>
-
+            
             <div class="project-card clickable" onclick="openModal('modal2')">
-                <img src="boat_water_sunset.jpg" alt="Autonomous Boat" class="project-image">
-                <div class="project-content">
-                    <h3>No Compass? No Problem.</h3>
-                    <h4>Autonomous Surface Vehicle</h4>
-                    <p></p>
-                    <p>No compass meant rethinking navigation from scratch.</p>
-                    <div class="tags">
-                        <span class="tag">Feature Prioritization</span>
-                        <span class="tag">Iterative Development</span>
-                        <span class="tag">Technical Trade-offs</span>
-                        <span class="tag personality">Resourceful</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="project-card clickable" onclick="openModal('modal3')">
                 <img src="Creating_portrait.png" alt="Death Doula Research" class="project-image">
                 <div class="project-content">
                     <h3>Worked to Death</h3>
@@ -597,23 +581,39 @@
                     </div>
                 </div>
             </div>
-
-            <div class="project-card clickable" onclick="openModal('modal4')">
-                <img src="Error_visualization.png" alt="Lodestone Biomedical" class="project-image">
+            
+            <div class="project-card clickable" onclick="openModal('modal3')">
+                <img src="oooze_chocolate_chunk.png" alt="Oooze Cookies" class="project-image">
                 <div class="project-content">
-                    <h3>Startup Summer</h3>
-                    <h4>Medical Device R&D Internship</h4>
+                    <h3>Oooze Cookies</h3>
+                    <h4>Campus Food Startup</h4>
                     <p></p>
-                    <p>Wearing all the hats: delivering science and a story to make the tech investable.</p>
+                    <p>Turning a favorite home recipe into a campus startup through rapid iteration and real customer feedback.</p>
                     <div class="tags">
-                        <span class="tag">Cross-Functional Coordination</span>
-                        <span class="tag">Experiment Planning</span>
-                        <span class="tag">Data Visualization</span>
-                        <span class="tag personality">Self-Starter</span>
+                        <span class="tag">Customer Discovery</span>
+                        <span class="tag">Market Research</span>
+                        <span class="tag">Brand Development</span>
+                        <span class="tag personality">Entrepreneurial</span>
                     </div>
                 </div>
             </div>
 
+            <div class="project-card clickable" onclick="openModal('modal4')">
+                <img src="boat_water_sunset.jpg" alt="Autonomous Boat" class="project-image">
+                <div class="project-content">
+                    <h3>No Compass? No Problem.</h3>
+                    <h4>Autonomous Surface Vehicle</h4>
+                    <p></p>
+                    <p>No compass meant rethinking navigation from scratch.</p>
+                    <div class="tags">
+                        <span class="tag">Feature Prioritization</span>
+                        <span class="tag">Iterative Development</span>
+                        <span class="tag">Technical Trade-offs</span>
+                        <span class="tag personality">Resourceful</span>
+                    </div>
+                </div>
+            </div>
+            
             <div class="project-card clickable" onclick="openModal('modal5')">
                 <img src="muon_detector_lake.png" alt="Muon Detector Research" class="project-image">
                 <div class="project-content">
@@ -629,21 +629,23 @@
                     </div>
                 </div>
             </div>
+
             <div class="project-card clickable" onclick="openModal('modal6')">
-                <img src="oooze_chocolate_chunk.png" alt="Oooze Cookies" class="project-image">
+                <img src="Error_visualization.png" alt="Lodestone Biomedical" class="project-image">
                 <div class="project-content">
-                    <h3>Oooze Cookies</h3>
-                    <h4>Campus Food Startup</h4>
+                    <h3>Startup Summer</h3>
+                    <h4>Medical Device R&D Internship</h4>
                     <p></p>
-                    <p>Turning a favorite home recipe into a campus startup through rapid iteration and real customer feedback.</p>
+                    <p>Wearing all the hats: delivering science and a story to make the tech investable.</p>
                     <div class="tags">
-                        <span class="tag">Customer Discovery</span>
-                        <span class="tag">Market Research</span>
-                        <span class="tag">Brand Development</span>
-                        <span class="tag personality">Entrepreneurial</span>
+                        <span class="tag">Cross-Functional Coordination</span>
+                        <span class="tag">Experiment Planning</span>
+                        <span class="tag">Data Visualization</span>
+                        <span class="tag personality">Self-Starter</span>
                     </div>
                 </div>
             </div>
+            
         </div>
     </div>
 
@@ -829,10 +831,233 @@
         </div>
     </div>
 
-    <!-- Modal 2: Autonomous Boat -->
+    <!-- Modal 2: Death Doula Research -->
     <div id="modal2" class="modal" onclick="closeModal(event, 'modal2')">
         <div class="modal-content" onclick="event.stopPropagation()">
             <button class="modal-close" onclick="closeModal(event, 'modal2')">&times;</button>
+            <div class="carousel-container">
+                <div class="carousel-slide active">
+                    <img src="Creating_portrait.png" alt="Creating People Portraits" onclick="openFullscreen('Creating_portrait.png')">
+                </div>
+                <div class="carousel-slide active">
+                    <img src="solutions.jpeg" alt="End-of-Life Care Products Brainstorm" onclick="openFullscreen('solutions.jpeg')">
+                </div>
+                <div class="carousel-slide">
+                    <img src="Aiding_Alice_persona.png" alt="Persona "Aiding Alice"" onclick="openFullscreen('Aiding_Alice_persona.png')">
+                </div>
+                <div class="carousel-slide">
+                    <img src="Blue_Sky_Ideas.png" alt="Ideation Session" onclick="openFullscreen('Blue_Sky_Ideas.png')">
+                </div>
+                <div class="carousel-slide">
+                    <img src="Death_BnB_Poster.JPG" alt="Final Poster" onclick="openFullscreen('Death_BnB_Poster.JPG')">
+                </div>
+                <button class="carousel-btn prev" onclick="changeSlide(event, 'modal2', -1)">‹</button>
+                <button class="carousel-btn next" onclick="changeSlide(event, 'modal2', 1)">›</button>
+                <button class="fullscreen-btn" onclick="getCurrentCarouselImage(event, 'modal2')">
+                    <span>⛶</span> View Full Size
+                </button>
+                <div class="carousel-indicators">
+                    <span class="indicator active" onclick="goToSlide(event, 'modal2', 0)"></span>
+                    <span class="indicator" onclick="goToSlide(event, 'modal2', 1)"></span>
+                    <span class="indicator" onclick="goToSlide(event, 'modal2', 2)"></span>
+                    <span class="indicator" onclick="goToSlide(event, 'modal2', 3)"></span>
+                </div>
+            </div>
+            <div class="modal-body">
+                <h2>Worked to Death</h2>
+                <h3>Innovative End-of-Life Care</h3>
+                <div class="tags">
+                    <span class="tag">User Research</span>
+                    <span class="tag">Persona Development</span>
+                    <span class="tag">Co-Design</span>
+                    <span class="tag">Service Design</span>
+                </div>
+                <p class="modal-description">
+                    Spent 3 months in research. 10+ interviews revealed burnout, family conflict, and systemic isolation. Co-designed Death BnB: nonprofit lodges bringing community back to American death culture.
+                </p>
+                <div class="modal-section">
+                    <h3>Problem & Opportunity</h3>
+                    <ul>
+                        <li>Problem: US death culture lacks community support systems present in global deathcare traditions</li>
+                        <li>User pain point: Doulas experience burnout from emotional burden and family conflict management</li>
+                        <li>Market gap: No community-focused alternative to medicalized hospice model</li>
+                        <li>Opportunity to "de-corporatize" end-of-life care</li>
+                    </ul>
+                </div>
+                <div class="modal-section">
+                    <h3>User Research</h3>
+                    <ul>
+                        <li>Conducted 10 stakeholder interactions with team: 4 in-person, 6 remote interviews</li>
+                        <li>Research methods: Co-designs, semi-structured interviews, observational shadowing</li>
+                        <li>Created 10 individual people portraits with quotes, photos, personality analysis</li>
+                    </ul>
+                </div>
+                <div class="modal-section">
+                    <h3>Data Synthesis</h3>
+                    <ul>
+                        <li>Synthesized research into 3 distinct personas representing user motivations:</li>
+                        <li><strong>Aiding Alice:</strong> High-volume healthcare worker motivated by helping many people, struggles with burnout and lack of peer support</li>
+                        <li><strong>Visionary Vanessa:</strong> Focused on systemic change in US death culture, politically engaged, values community-oriented care models</li>
+                        <li><strong>Mending Mary:</strong> Personal loss survivor using doulaing to heal, runs support groups, destigmatizes death for broader community</li>
+                        <li>Mapped personas on 2x2 frameworks: spiritual-political vs. frustrated-content showed strong segmentation</li>
+                    </ul>
+                </div>
+                <div class="modal-section">
+                    <h3>Key Insights</h3>
+                    <ul>
+                        <li><strong>Insight 1:</strong> Doulas venerate global deathcare traditions that provide community at EOL</li>
+                        <li><strong>Insight 2:</strong> Most doula stress comes from family conflict, not the dying client</li>
+                    </ul>
+                </div>
+                <div class="modal-section">
+                    <h3>Ideation & Co-Design Process</h3>
+                    <ul>
+                        <li>Generated 100+ ideas plotted on "fanciful horizon" boldness framework and conducted 5 co-design sessions</li>
+                        <li>Key learning: Boldness comes from cultural shifts, not radical technology</li>
+                        <li>Validated assumptions, iterated, and refined ideas to 3 final concepts</li>
+                    </ul>
+                </div>
+                <div class="modal-section">
+                    <h3>Solution: Death BnB Value Proposition</h3>
+                    <ul>
+                        <li><strong>What it is:</strong> Nonprofit network of lodges providing community-centered end-of-life care</li>
+                        <li><strong>Different from hospice:</strong> Focuses on quality of life and community vs. medical care and life extension</li>
+                        <li><strong>For doulas:</strong> Creates professional network for experience-sharing and reduces isolation</li>
+                        <li><strong>For clients:</strong> Scenic locations with peers, meaningful activities, and holistic support</li>
+                        <li><strong>For families:</strong> Reduces trauma of home death by providing community support</li>
+                        <li>Funding model: 501(c)(3) via donations and service charges</li>
+                    </ul>
+                </div>
+                <div class="modal-section">
+                    <h3>Product Management Skills Demonstrated</h3>
+                    <ul>
+                        <li>User research</li>
+                        <li>Persona development</li>
+                        <li>Iterative design</li>
+                        <li>Stakeholder management</li>
+                        <li>Service design</li>
+                    </ul>
+                </div>
+                <div class="modal-section">
+                    <h3>Impact</h3>
+                    <ul>
+                        <li>Validated concept addressing critical gap in US healthcare system</li>
+                        <li>Designed solution serving all three personas with distinct value props:</li>
+                        <li>Created compelling vision of transformed death culture in US</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 3: Oooze Cookies -->
+    <div id="modal3" class="modal" onclick="closeModal(event, 'modal3')">
+        <div class="modal-content" onclick="event.stopPropagation()">
+            <button class="modal-close" onclick="closeModal(event, 'modal3')">&times;</button>
+            <div class="carousel-container">
+                <div class="carousel-slide active">
+                    <img src="oooze_chocolate_chunk.png" alt="Chocolate Chunk Cookie" onclick="openFullscreen('oooze_chocolate_chunk.png')">
+                </div>
+                <div class="carousel-slide">
+                    <img src="oooze_logo.png" alt="Brand Identity" onclick="openFullscreen('oooze_logo.png')">
+                </div>
+                <div class="carousel-slide">
+                    <img src="oooze_gochujang_caramel.png" alt="Gochujang Caramel Cookie" onclick="openFullscreen('oooze_gochujang_caramel.png')">
+                </div>
+                <div class="carousel-slide">
+                    <img src="oooze_tiramisu.png" alt="Tiramisu Cookie" onclick="openFullscreen('oooze_tiramisu.png')">
+                </div>
+                <button class="carousel-btn prev" onclick="changeSlide(event, 'modal3', -1)">‹</button>
+                <button class="carousel-btn next" onclick="changeSlide(event, 'modal3', 1)">›</button>
+                <button class="fullscreen-btn" onclick="getCurrentCarouselImage(event, 'modal3')">
+                    <span>⛶</span> View Full Size
+                </button>
+                <div class="carousel-indicators">
+                    <span class="indicator active" onclick="goToSlide(event, 'modal3', 0)"></span>
+                    <span class="indicator" onclick="goToSlide(event, 'modal3', 1)"></span>
+                    <span class="indicator" onclick="goToSlide(event, 'modal3', 2)"></span>
+                    <span class="indicator" onclick="goToSlide(event, 'modal3', 3)"></span>
+                </div>
+            </div>
+            <div class="modal-body">
+                <h2>Oooze Cookies</h2>
+                <h3>Campus Food Startup</h3>
+                <div class="tags">
+                    <span class="tag">Customer Discovery</span>
+                    <span class="tag">Market Research</span>
+                    <span class="tag">Operations Planning</span>
+                    <span class="tag">Brand Development</span>
+                </div>
+                <p class="modal-description">
+                    Set to launch in Spring 2026 at Wellesley. Conducted end-to-end product development from recipe iteration and brand identity testing to operational planning. Applied lean startup methodology: testing assumptions through real customer feedback before investing in full production.
+                </p>
+                <div class="modal-section">
+                    <h3>Market Opportunity</h3>
+                    <ul>
+                        <li>Market opportunity: Wellesley students have limited late-night options for convenient, high-quality snacks</li>
+                        <li>Customer discovery: Conducted anonymous survey of Wellesley students gathering data on: pricing preferences, pickup method, flavor profiles, and purchase frequency</li>
+                        <li>Differentiation: Creative flavor profiles (Gochujang Caramel, Tiramisu, Chocolate Chunk) with strong visual brand identity</li>
+                        <li>Success metrics: Positive survey feedback on pricing, flavors, and delivery model; validated demand through pre-orders</li>
+                    </ul>
+                </div>
+                <div class="modal-section">
+                    <h3>Product Development</h3>
+                    <ul>
+                        <li>Recipe experimentation: Tested multiple variations of each flavor to optimize taste, texture and uniqueness</li>
+                        <li>Feedback loop: Used holiday gathering as live product testing—fastest disappearing cookies = strongest product-market fit</li>
+                        <li>Size optimization: Researching cookie dimensions that balance customer appeal with profit margins and production efficiency</li>
+                    </ul>
+                </div>
+                <div class="modal-section">
+                    <h3>Brand Identity </h3>
+                    <ul>
+                        <li>User testing: Gathered first impressions on poster designs to identify which elements resonated and what needed refinement</li>
+                        <li>Brand positioning: "It's your world. Make it sweeter" tagline emphasizing personalization and joy</li>
+                        <li>Social proof strategy: Planning @oooze.cookies Instagram presence for pre-launch buzz and customer engagement</li>
+                    </ul>
+                </div>
+                <div class="modal-section">
+                    <h3>Operations Planning</h3>
+                    <ul>
+                        <li>Regulatory research: Investigated food preparation safety guidelines and requirements for operating from home kitchen</li>
+                        <li>Supply chain: Planning ingredient purchasing schedule to maintain freshness while minimizing waste</li>
+                        <li>Production timeline: Mapping out when to prepare dough, bake batches, and coordinate pickup windows with customer availability and my academic workload</li>
+                    </ul>
+                </div>
+                <div class="modal-section">
+                    <h3>Business Model</h3>
+                    <ul>
+                        <li>Cost analysis: Calculating ingredient costs, labor time, and overhead to establish baseline pricing</li>
+                        <li>Competitive research: Analyzing pricing of other campus food options and local bakeries</li>
+                        <li>Profit margin optimization: Balancing cookie size, ingredient quality, and pricing to ensure sustainable business model</li>
+                    </ul>
+                </div>
+                <div class="modal-section">
+                    <h3>Product Management Skills Demonstrated</h3>
+                    <ul>
+                        <li>Data-driven iteration</li>
+                        <li>Operations planning</li>
+                        <li>Brand development</li>
+                        <li>Market research</li>
+                        <li>Risk mitigation</li>
+                    </ul>
+                </div>
+                <div class="modal-section">
+                    <h3>Future Roadmap</h3>
+                    <ul>
+                        <li>Post content on Instagram account to build interest</li>
+                        <li>Conduct soft launch with small batch to validate production process and gather initial customer feedback</li>
+                        <li>Iterate on pricing, flavors, and scale of operations based on first-week data</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 4: Autonomous Boat -->
+    <div id="modal4" class="modal" onclick="closeModal(event, 'modal4')">
+        <div class="modal-content" onclick="event.stopPropagation()">
+            <button class="modal-close" onclick="closeModal(event, 'modal4')">&times;</button>
             <div class="carousel-container">
                 <div class="carousel-slide active">
                     <img src="boat_water_sunset.jpg" alt="boat_water_sunset" onclick="openFullscreen('boat_water_sunset.jpg')">
@@ -849,17 +1074,17 @@
                 <div class="carousel-slide">
                     <img src="boat_prototype_closeup.jpg" alt="boat_prototype_closeup" onclick="openFullscreen('boat_prototype_closeup.jpg')">
                 </div>
-                <button class="carousel-btn prev" onclick="changeSlide(event, 'modal2', -1)">‹</button>
-                <button class="carousel-btn next" onclick="changeSlide(event, 'modal2', 1)">›</button>
-                <button class="fullscreen-btn" onclick="getCurrentCarouselImage(event, 'modal2')">
+                <button class="carousel-btn prev" onclick="changeSlide(event, 'modal4', -1)">‹</button>
+                <button class="carousel-btn next" onclick="changeSlide(event, 'modal4', 1)">›</button>
+                <button class="fullscreen-btn" onclick="getCurrentCarouselImage(event, 'modal4')">
                     <span>⛶</span> View Full Size
                 </button>
                 <div class="carousel-indicators">
-                    <span class="indicator active" onclick="goToSlide(event, 'modal2', 0)"></span>
-                    <span class="indicator" onclick="goToSlide(event, 'modal2', 1)"></span>
-                    <span class="indicator" onclick="goToSlide(event, 'modal2', 2)"></span>
-                    <span class="indicator" onclick="goToSlide(event, 'modal2', 3)"></span>
-                    <span class="indicator" onclick="goToSlide(event, 'modal2', 4)"></span>
+                    <span class="indicator active" onclick="goToSlide(event, 'modal4', 0)"></span>
+                    <span class="indicator" onclick="goToSlide(event, 'modal4', 1)"></span>
+                    <span class="indicator" onclick="goToSlide(event, 'modal4', 2)"></span>
+                    <span class="indicator" onclick="goToSlide(event, 'modal4', 3)"></span>
+                    <span class="indicator" onclick="goToSlide(event, 'modal4', 4)"></span>
                 </div>
             </div>
             <div class="modal-body">
@@ -905,128 +1130,6 @@
                         <li>Demonstrated agile methodology: build, test, learn, iterate based on real data</li>
                         <li>Validated assumptions through testing before building complex features</li>
                         <li>Made data-driven decisions based on hardware accuracy and computational power</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Modal 3: Death Doula Research -->
-    <div id="modal3" class="modal" onclick="closeModal(event, 'modal3')">
-        <div class="modal-content" onclick="event.stopPropagation()">
-            <button class="modal-close" onclick="closeModal(event, 'modal3')">&times;</button>
-            <div class="carousel-container">
-                <div class="carousel-slide active">
-                    <img src="Creating_portrait.png" alt="Creating People Portraits" onclick="openFullscreen('Creating_portrait.png')">
-                </div>
-                <div class="carousel-slide active">
-                    <img src="solutions.jpeg" alt="End-of-Life Care Products Brainstorm" onclick="openFullscreen('solutions.jpeg')">
-                </div>
-                <div class="carousel-slide">
-                    <img src="Aiding_Alice_persona.png" alt="Persona "Aiding Alice"" onclick="openFullscreen('Aiding_Alice_persona.png')">
-                </div>
-                <div class="carousel-slide">
-                    <img src="Blue_Sky_Ideas.png" alt="Ideation Session" onclick="openFullscreen('Blue_Sky_Ideas.png')">
-                </div>
-                <div class="carousel-slide">
-                    <img src="Death_BnB_Poster.JPG" alt="Final Poster" onclick="openFullscreen('Death_BnB_Poster.JPG')">
-                </div>
-                <button class="carousel-btn prev" onclick="changeSlide(event, 'modal3', -1)">‹</button>
-                <button class="carousel-btn next" onclick="changeSlide(event, 'modal3', 1)">›</button>
-                <button class="fullscreen-btn" onclick="getCurrentCarouselImage(event, 'modal3')">
-                    <span>⛶</span> View Full Size
-                </button>
-                <div class="carousel-indicators">
-                    <span class="indicator active" onclick="goToSlide(event, 'modal3', 0)"></span>
-                    <span class="indicator" onclick="goToSlide(event, 'modal3', 1)"></span>
-                    <span class="indicator" onclick="goToSlide(event, 'modal3', 2)"></span>
-                    <span class="indicator" onclick="goToSlide(event, 'modal3', 3)"></span>
-                </div>
-            </div>
-            <div class="modal-body">
-                <h2>Worked to Death</h2>
-                <h3>Innovative End-of-Life Care</h3>
-                <div class="tags">
-                    <span class="tag">User Research</span>
-                    <span class="tag">Persona Development</span>
-                    <span class="tag">Co-Design</span>
-                    <span class="tag">Service Design</span>
-                </div>
-                <p class="modal-description">
-                    Spent 3 months in research. 10+ interviews revealed burnout, family conflict, and systemic isolation. Co-designed Death BnB: nonprofit lodges bringing community back to American death culture.
-                </p>
-                <div class="modal-section">
-                    <h3>Problem & Opportunity</h3>
-                    <ul>
-                        <li>Problem: US death culture lacks community support systems present in global deathcare traditions</li>
-                        <li>User pain point: Doulas experience burnout from emotional burden and family conflict management</li>
-                        <li>Market gap: No community-focused alternative to medicalized hospice model</li>
-                        <li>Opportunity: "De-corporatize" end-of-life care</li>
-                    </ul>
-                </div>
-                <div class="modal-section">
-                    <h3>User Research</h3>
-                    <ul>
-                        <li>Conducted 10 stakeholder interactions with team: 4 in-person, 6 remote interviews</li>
-                        <li>Research methods: Co-designs, semi-structured interviews, observational shadowing</li>
-                        <li>Created 10 individual people portraits with quotes, photos, personality analysis</li>
-                    </ul>
-                </div>
-                <div class="modal-section">
-                    <h3>Data Synthesis</h3>
-                    <ul>
-                        <li>Synthesized research into 3 distinct personas representing user motivations:</li>
-                        <li><strong>Aiding Alice:</strong> High-volume healthcare worker motivated by helping many people, struggles with burnout and lack of peer support</li>
-                        <li><strong>Visionary Vanessa:</strong> Focused on systemic change in US death culture, politically engaged, values community-oriented care models</li>
-                        <li><strong>Mending Mary:</strong> Personal loss survivor using doulaing to heal, runs support groups, destigmatizes death for broader community</li>
-                        <li>Mapped personas on 2x2 frameworks: spiritual-political vs. frustrated-content showed strong segmentation</li>
-                    </ul>
-                </div>
-                <div class="modal-section">
-                    <h3>Key Insights</h3>
-                    <ul>
-                        <li><strong>Insight 1:</strong> Doulas venerate global deathcare traditions that provide community at EOL</li>
-                        <li><strong>Insight 2:</strong> Most doula stress comes from family conflict, not the dying client</li>
-                    </ul>
-                </div>
-                <div class="modal-section">
-                    <h3>Ideation & Co-Design Process</h3>
-                    <ul>
-                        <li>Generated 100+ ideas plotted on "fanciful horizon" boldness framework</li>
-                        <li>Conducted 5 co-design sessions with doulas including 2 new participants</li>
-                        <li>Key learning: Boldness comes from cultural shifts, not radical technology</li>
-                        <li>Validated assumptions, iterated, and refined ideas to 3 final concepts</li>
-                    </ul>
-                </div>
-                <div class="modal-section">
-                    <h3>Solution: Death BnB Value Proposition</h3>
-                    <ul>
-                        <li><strong>What it is:</strong> Nonprofit network of lodges providing community-centered end-of-life care</li>
-                        <li><strong>Different from hospice:</strong> Focuses on quality of life and community vs. medical care and life extension</li>
-                        <li><strong>For doulas:</strong> Creates professional network for experience-sharing and reduces isolation</li>
-                        <li><strong>For clients:</strong> Scenic locations with peers, meaningful activities, and holistic support</li>
-                        <li><strong>For families:</strong> Reduces trauma of home death by providing community support</li>
-                        <li>Funding model: 501(c)(3) via donations and service charges</li>
-                    </ul>
-                </div>
-                <div class="modal-section">
-                    <h3>Product Management Skills Demonstrated</h3>
-                    <ul>
-                        <li>User research</li>
-                        <li>Persona development</li>
-                        <li>Problem framing</li>
-                        <li>Iterative design</li>
-                        <li>Stakeholder management</li>
-                        <li>Service design</li>
-                        <li>Value proposition</li>
-                    </ul>
-                </div>
-                <div class="modal-section">
-                    <h3>Impact</h3>
-                    <ul>
-                        <li>Validated concept addressing critical gap in US healthcare system</li>
-                        <li>Designed solution serving all three personas with distinct value props:</li>
-                        <li>Created compelling vision of transformed death culture in US</li>
                     </ul>
                 </div>
             </div>
@@ -1138,10 +1241,10 @@
         </div>
     </div>
 
-    <!-- Modal 4: Lodestone Biomedical -->
-    <div id="modal4" class="modal" onclick="closeModal(event, 'modal4')">
+    <!-- Modal 6: Lodestone Biomedical -->
+    <div id="modal6" class="modal" onclick="closeModal(event, 'modal6')">
         <div class="modal-content" onclick="event.stopPropagation()">
-            <button class="modal-close" onclick="closeModal(event, 'modal4')">&times;</button>
+            <button class="modal-close" onclick="closeModal(event, 'modal6')">&times;</button>
             <div class="carousel-container">
                 <div class="carousel-slide active">
                     <img src="Error_visualization.png" alt="Error Visualization" onclick="openFullscreen('Error_visualization.png')">
@@ -1162,15 +1265,15 @@
                     </video>
                 </div>
 
-                <button class="carousel-btn prev" onclick="changeSlide(event, 'modal4', -1)">‹</button>
-                <button class="carousel-btn next" onclick="changeSlide(event, 'modal4', 1)">›</button>
-                <button class="fullscreen-btn" onclick="getCurrentCarouselImage(event, 'modal4')">
+                <button class="carousel-btn prev" onclick="changeSlide(event, 'modal6', -1)">‹</button>
+                <button class="carousel-btn next" onclick="changeSlide(event, 'modal6', 1)">›</button>
+                <button class="fullscreen-btn" onclick="getCurrentCarouselImage(event, 'modal6')">
                     <span>⛶</span> View Full Size
                 </button>
                 <div class="carousel-indicators">
-                    <span class="indicator active" onclick="goToSlide(event, 'modal4', 0)"></span>
-                    <span class="indicator" onclick="goToSlide(event, 'modal4', 1)"></span>
-                    <span class="indicator" onclick="goToSlide(event, 'modal4', 2)"></span>
+                    <span class="indicator active" onclick="goToSlide(event, 'modal6', 0)"></span>
+                    <span class="indicator" onclick="goToSlide(event, 'modal6', 1)"></span>
+                    <span class="indicator" onclick="goToSlide(event, 'modal6', 2)"></span>
                 </div>
             </div>
             <div class="modal-body">
@@ -1235,110 +1338,6 @@
                         <li>Optimized expensive experimental resources through effective scheduling</li>
                         <li>Created reusable investor communication asset (animated video)</li>
                         <li>Contributed to early-stage product development at critical validation phase</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Modal 6: Oooze Cookies -->
-    <div id="modal6" class="modal" onclick="closeModal(event, 'modal6')">
-        <div class="modal-content" onclick="event.stopPropagation()">
-            <button class="modal-close" onclick="closeModal(event, 'modal6')">&times;</button>
-            <div class="carousel-container">
-                <div class="carousel-slide active">
-                    <img src="oooze_chocolate_chunk.png" alt="Chocolate Chunk Cookie" onclick="openFullscreen('oooze_chocolate_chunk.png')">
-                </div>
-                <div class="carousel-slide">
-                    <img src="oooze_logo.png" alt="Brand Identity" onclick="openFullscreen('oooze_logo.png')">
-                </div>
-                <div class="carousel-slide">
-                    <img src="oooze_gochujang_caramel.png" alt="Gochujang Caramel Cookie" onclick="openFullscreen('oooze_gochujang_caramel.png')">
-                </div>
-                <div class="carousel-slide">
-                    <img src="oooze_tiramisu.png" alt="Tiramisu Cookie" onclick="openFullscreen('oooze_tiramisu.png')">
-                </div>
-                <button class="carousel-btn prev" onclick="changeSlide(event, 'modal6', -1)">‹</button>
-                <button class="carousel-btn next" onclick="changeSlide(event, 'modal6', 1)">›</button>
-                <button class="fullscreen-btn" onclick="getCurrentCarouselImage(event, 'modal6')">
-                    <span>⛶</span> View Full Size
-                </button>
-                <div class="carousel-indicators">
-                    <span class="indicator active" onclick="goToSlide(event, 'modal6', 0)"></span>
-                    <span class="indicator" onclick="goToSlide(event, 'modal6', 1)"></span>
-                    <span class="indicator" onclick="goToSlide(event, 'modal6', 2)"></span>
-                    <span class="indicator" onclick="goToSlide(event, 'modal6', 3)"></span>
-                </div>
-            </div>
-            <div class="modal-body">
-                <h2>Oooze Cookies</h2>
-                <h3>Campus Food Startup</h3>
-                <div class="tags">
-                    <span class="tag">Customer Discovery</span>
-                    <span class="tag">Market Research</span>
-                    <span class="tag">Operations Planning</span>
-                    <span class="tag">Brand Development</span>
-                </div>
-                <p class="modal-description">
-                    Set to launch in Spring 2026 at Wellesley. Conducted end-to-end product development from recipe iteration and brand identity testing to operational planning. Applied lean startup methodology: testing assumptions through real customer feedback before investing in full production.
-                </p>
-                <div class="modal-section">
-                    <h3>Market Opportunity</h3>
-                    <ul>
-                        <li>Market opportunity: Wellesley students have limited late-night options for convenient, high-quality snacks</li>
-                        <li>Customer discovery: Conducted anonymous survey of Wellesley students gathering data on: pricing preferences, pickup method, flavor profiles, and purchase frequency</li>
-                        <li>Differentiation: Creative flavor profiles (Gochujang Caramel, Tiramisu, Chocolate Chunk) with strong visual brand identity</li>
-                        <li>Success metrics: Positive survey feedback on pricing, flavors, and delivery model; validated demand through pre-orders</li>
-                    </ul>
-                </div>
-                <div class="modal-section">
-                    <h3>Product Development</h3>
-                    <ul>
-                        <li>Recipe experimentation: Tested multiple variations of each flavor to optimize taste, texture and uniqueness</li>
-                        <li>Feedback loop: Used holiday gathering as live product testing—fastest disappearing cookies = strongest product-market fit</li>
-                        <li>Size optimization: Researching cookie dimensions that balance customer appeal with profit margins and production efficiency</li>
-                    </ul>
-                </div>
-                <div class="modal-section">
-                    <h3>Brand Identity </h3>
-                    <ul>
-                        <li>User testing: Gathered first impressions on poster designs to identify which elements resonated and what needed refinement</li>
-                        <li>Brand positioning: "It's your world. Make it sweeter" tagline emphasizing personalization and joy</li>
-                        <li>Social proof strategy: Planning @oooze.cookies Instagram presence for pre-launch buzz and customer engagement</li>
-                    </ul>
-                </div>
-                <div class="modal-section">
-                    <h3>Operations Planning</h3>
-                    <ul>
-                        <li>Regulatory research: Investigated food preparation safety guidelines and requirements for operating from home kitchen</li>
-                        <li>Supply chain: Planning ingredient purchasing schedule to maintain freshness while minimizing waste</li>
-                        <li>Production timeline: Mapping out when to prepare dough, bake batches, and coordinate pickup windows with customer availability and my academic workload</li>
-                    </ul>
-                </div>
-                <div class="modal-section">
-                    <h3>Business Model</h3>
-                    <ul>
-                        <li>Cost analysis: Calculating ingredient costs, labor time, and overhead to establish baseline pricing</li>
-                        <li>Competitive research: Analyzing pricing of other campus food options and local bakeries</li>
-                        <li>Profit margin optimization: Balancing cookie size, ingredient quality, and pricing to ensure sustainable business model</li>
-                    </ul>
-                </div>
-                <div class="modal-section">
-                    <h3>Product Management Skills Demonstrated</h3>
-                    <ul>
-                        <li>Data-driven iteration</li>
-                        <li>Operations planning</li>
-                        <li>Brand development</li>
-                        <li>Market research</li>
-                        <li>Risk mitigation</li>
-                    </ul>
-                </div>
-                <div class="modal-section">
-                    <h3>Future Roadmap</h3>
-                    <ul>
-                        <li>Post content on Instagram account to build interest</li>
-                        <li>Conduct soft launch with small batch to validate production process and gather initial customer feedback</li>
-                        <li>Iterate on pricing, flavors, and scale of operations based on first-week data</li>
                     </ul>
                 </div>
             </div>
