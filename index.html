@@ -604,7 +604,7 @@
                     <h3>Startup Summer</h3>
                     <h4>Medical Device R&D Internship</h4>
                     <p></p>
-                    <p>Wearing all the hats: delivering science and a story to make the tech investable</p>
+                    <p>Wearing all the hats: delivering science and a story to make the tech investable.</p>
                     <div class="tags">
                         <span class="tag">Cross-Functional Coordination</span>
                         <span class="tag">Experiment Planning</span>
@@ -617,8 +617,10 @@
             <div class="project-card clickable" onclick="openModal('modal5')">
                 <img src="muon_detector_lake.png" alt="Muon Detector Research" class="project-image">
                 <div class="project-content">
-                    <h3>Underwater Muon Detection System</h3>
-                    <p>Led experimental physics project measuring cosmic ray muon attenuation in water. Designed waterproof housing, optimized detector configuration through iterative testing, and delivered results within budget and safety constraints.</p>
+                    <h3>The Goldilocks Box</h3>
+                    <h4>Underwater Muon Detection System</h4>
+                    <p></p>
+                    <p>Making our muon detection apparatus heavy enough to sink but light enough to retrieve</p>
                     <div class="tags">
                         <span class="tag">Hardware Product Development</span>
                         <span class="tag">Rapid Prototyping</span>
@@ -1071,77 +1073,62 @@
                     <span class="tag">Data Analysis</span>
                 </div>
                 <p class="modal-description">
-                    Led experimental physics project measuring cosmic ray muon attenuation in water using CosmicWatch detectors. Owned full product development lifecycle from requirements definition through deployment, delivering functional underwater detection system within budget and safety constraints. Demonstrated rapid iteration and pivot capabilities when initial design failed field testing.
+                    Built three boxes to solve it. First: buoyant IP68 housing that wouldn't sink. Second: lead-brick fortress that wouldn't come up. Third: lightweight dry bag with measured ballast. Found a solution to this Goldilocks engineering problem where constraints met.
                 </p>
                 <div class="modal-section">
-                    <h3>Product Requirements & User Needs</h3>
+                    <h3>Product Requirements</h3>
                     <ul>
-                        <li>Core requirement: Measure muon flux at depths 0-10m in lake environment</li>
+                        <li>Objective: Measure attenuation of muon flux at depths 0-10m in lake environment</li>
                         <li>Constraints: Waterproof to 10m, lightweight enough for 2-person canoe deployment, <$500 budget</li>
-                        <li>Safety critical: Must be retrievable from lake, stable enough to prevent capsizing</li>
                         <li>User need: Simple deployment/retrieval process operable in cold weather conditions</li>
-                        <li>Data quality: 6-minute measurement windows at each depth with redundant waterproofing</li>
                     </ul>
                 </div>
                 <div class="modal-section">
                     <h3>Rapid Iteration Through Failure</h3>
                     <ul>
-                        <li>V1 (Failed): IP68 pressure-rated container (35.6 x 35.6 x 18.3 cm) with tile ballast - too buoyant to sink despite passing sink test</li>
-                        <li>V2 (Failed): Added lead bricks (27kg total) - solved buoyancy but created new problem: too heavy to retrieve from canoe</li>
-                        <li>V3 (Shipped): Pivoted to lightweight dry bag + 2.3kg aluminum/stone ballast - achieved all requirements</li>
-                        <li>Key learning: Validated assumptions early through field testing, not just controlled lab tests</li>
+                        <li>V1 (Failed): Large pressure-rated container (35.6 x 35.6 x 18.3 cm) with tile ballast - too buoyant to sink despite initial tests</li>
+                        <li>V2 (Failed): Added lead bricks (27kg total) - solved buoyancy but now too heavy to retrieve from canoe</li>
+                        <li>V3 (Shipped): Pivoted to lightweight dry bag and Ziplocks + 2.3kg aluminum/stone ballast</li>
                         <li>Made kill-decision on sunk cost ($200+ housing investment) to deliver working product on timeline</li>
                     </ul>
                 </div>
                 <div class="modal-section">
                     <h3>Technical Problem-Solving</h3>
                     <ul>
-                        <li>Waterproofing: Implemented defense-in-depth with nested Ziploc bags + dry bag (redundancy validated through testing)</li>
-                        <li>Depth measurement: GPS coordinates + rope measurement system with 1.5m markings for precision</li>
-                        <li>Detector optimization: Analyzed acceptance angle vs. count rate tradeoff, chose 2.5cm separation for 70% sky coverage</li>
-                        <li>Power management: Validated 2-hour battery life with only 3% drain, eliminating mid-test recharging risk</li>
-                        <li>Stability: Designed duct-taped ballast block to prevent dry bag puncture while maintaining vertical detector orientation</li>
+                        <li>Waterproofing: Implemented redundancy validated through testing (nested Ziploc bags + dry bag)</li>
+                        <li>Data optimization: Analyzed acceptance angle vs. count rate tradeoff, chose 2.5cm separation for 70% sky coverage</li>
+                        <li>Stability: Designed ballast block to prevent dry bag puncture and keep detector vertical</li>
                     </ul>
                 </div>
                 <div class="modal-section">
                     <h3>Data-Driven Decisions</h3>
                     <ul>
                         <li>Measured 70% muon attenuation at 9.75m depth, demonstrating exponential decay pattern</li>
-                        <li>Identified systematic error: Sea-level measurement showed high angular velocity (40°/s) due to canoe motion</li>
                         <li>Root cause analysis: Experimental counts 55% lower than theoretical predictions, traced to wide acceptance angle (63.4°)</li>
-                        <li>Validated detector separation experiment: 70% sky acceptance (d=2.5cm) vs. 35.6% (d=8cm) configuration</li>
                         <li>Quantified error sources: timing error <0.16%, angle error ~1%, temperature effects negligible</li>
                     </ul>
                 </div>
                 <div class="modal-section">
-                    <h3>Product Management Outcomes</h3>
+                    <h3>Outcomes</h3>
                     <ul>
                         <li>Delivered working underwater detector system within 6-week timeline and $500 budget</li>
-                        <li>Successful deployment: 9 depth measurements (0-9.75m) with 2 trials each, zero equipment loss</li>
-                        <li>Demonstrated rapid prototyping: 3 hardware iterations with fast fail-forward approach</li>
-                        <li>Created reproducible methodology: Documented design for future student research teams</li>
                         <li>Balanced competing constraints: waterproofing, weight, cost, safety, data quality, and timeline</li>
                     </ul>
                 </div>
                 <div class="modal-section">
-                    <h3>Future Roadmap Recommendations</h3>
+                    <h3>Future Recommendations</h3>
                     <ul>
                         <li>Increase detector separation to 8cm to reduce acceptance angle and improve data accuracy</li>
                         <li>Add pressure sensor for automated trial timing and depth verification</li>
-                        <li>Extend depth range to 15m with longer measurement intervals</li>
-                        <li>Test in saltwater environments and explore radiation detection applications near hydrothermal vents</li>
-                        <li>Implement gyroscope-based tilt correction in post-processing to account for non-vertical orientations</li>
                     </ul>
                 </div>
                 <div class="modal-section">
                     <h3>PM Skills Demonstrated</h3>
                     <ul>
-                        <li>Requirements definition under conflicting constraints (safety, budget, physics goals)</li>
+                        <li>Requirements definition under conflicting constraints</li>
                         <li>Rapid iteration and fail-fast mentality when designs didn't meet field conditions</li>
                         <li>Risk mitigation through redundant systems (nested waterproofing, tether backup)</li>
-                        <li>Data analysis to identify root causes of systematic errors</li>
                         <li>Technical communication: Co-authored comprehensive research paper documenting methodology for future classes</li>
-                        <li>Roadmap planning based on failure mode analysis</li>
                     </ul>
                 </div>
             </div>
